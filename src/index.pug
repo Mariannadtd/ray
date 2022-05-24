@@ -1,0 +1,32 @@
+- var pageTitle = 'Луч'
+
+doctype html
+html
+  head
+    title= pageTitle
+    style 
+      include styles/style.css
+      include styles/bootstrap-grid.min.css
+      include styles/bootstrap-reboot.min.css
+  body
+    include modules/header
+    h1 My Site
+    p Welcome to my super lame site.
+
+    include modules/footer
+
+    section.offer 
+      .container
+        .row
+          .col-6
+            h3.offer-title Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
+            .offer-btn.btn оставить заявку
+          .col-6 
+            ul.offer-slider  
+              li.offer-slider__item.active
+                img(src="../images/offer/offer-slider1.png", alt="slider1")
+              //- li.offer-slider__item
+              //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
+
+
+    script(src='script.js')

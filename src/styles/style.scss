@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueProBoldItalic.eot');
+  src: url('../fonts/BebasNeueProBoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BebasNeueProBoldItalic.woff2') format('woff2'),
+       url('../fonts/BebasNeueProBoldItalic.woff') format('woff'),
+       url('../fonts/BebasNeueProBoldItalic.ttf') format('truetype'),
+       url('../fonts/BebasNeueProBoldItalic.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+
+$extra-small:        320px;
+$small:              576px;
+$medium:             768px;
+$large:              992px;
+$x-large:           1200px;
+$xx-large:          1400px;
+
+$red: #E0013F;
+$blue: #0069E4;
+
+html {
+  font-size: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+body {
+  font-family: 'Bebas Neue', sans-serif !important;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+a:active,
+a:hover,
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+.upper {
+  text-transform: uppercase;
+}
+.block {
+  display: block;
+}
+
+
+// HEADER
+.header {
+  color: #fff;
+  background-image: url('../images/header/main.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 10;
+  font-size: 3.2rem;
+  padding-top: 2.8rem;
+  &__title {
+    font-size: 9.6rem;
+    margin: 0 3rem;
+  }
+  &__paragraph {
+    margin: 34rem 0 8.6rem;
+    color: black;
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans';
+    text-align: center;
+  }
+  &__rec  {
+    top: -360px;
+    left: -310px;
+    z-index: -5;
+  }
+}
+.popup {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 4px auto;
+  background-color: white;
+  transition: 0.2s;
+}
+.popup {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+}
+.open {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body {
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+.hamburger {
+  display: flex;
+  &__field {
+    padding: 1rem 0;
+    cursor: pointer;
+    &.active .bar:nth-child(1) {
+      transform: translateY(9.2px) rotate(45deg);
+    }
+    &.active .bar:nth-child(3) {
+      transform: translateY(-9.2px) rotate(-45deg);
+    }
+  }
+}
+.logo {
+  margin: 9rem 0 11.2rem;
+}
