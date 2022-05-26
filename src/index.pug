@@ -10,17 +10,13 @@ html
       include styles/bootstrap-reboot.min.css
   body
     include modules/header
-    h1 My Site
-    p Welcome to my super lame site.
-
-    include modules/footer
 
     section.offer 
       .container
-        .row
+        .row.align-items-center
           .col-6
-            h3.offer-title Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
-            .offer-btn.btn оставить заявку
+            h3.offer__title Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
+            .offer__btn.btn оставить заявку
           .col-6 
             ul.offer-slider  
               li.offer-slider__item.active
@@ -28,5 +24,67 @@ html
               //- li.offer-slider__item
               //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
 
+    section.about 
+      .container
+        ul.row.about-list.px-0
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/ice.png").about-list__img
+            .description
+              h3.description__title лед
+              p.description__paragraph Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/ice.png").about-list__img
+            .description
+              h3.description__title зал
+              p.description__paragraph Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. 
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/ice-rink.png").about-list__img
+            .description
+              h3.description__title свет
+              p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/light.png").about-list__img
+            .description
+              h3.description__title звук
+              p.description__paragraph Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. 
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/sound.png").about-list__img
+            .description
+              h3.description__title раздевалки
+              p.description__paragraph Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/locker-room.png").about-list__img
+            .description
+              h3.description__title тренажерный зал
+              p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
+          li.col-6.about-list__item.d-flex.justify-content-start
+            img(src="../images/about/gum.png").about-list__img
+            .description
+              h3.description__title зона спа
+              p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
+
+    section.opportunities
+      .container
+        .row.align-items-center
+          .col-6 
+            h2.opportunities__title возможности
+          .col-6
+            .opportunities-list.d-flex
+              .opportunities-list__item 
+                h4.opportunities-list__title заточка коньков
+                img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
+              .opportunities-list__item 
+                h4.opportunities-list__title кафе
+                img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
+              .opportunities-list__item 
+                h4.opportunities-list__title сушилка
+                img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
+              .opportunities-list__item 
+                h4.opportunities-list__title проведение мероприятий
+                img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
+
+
+
+    include modules/footer
 
     script(src='script.js')

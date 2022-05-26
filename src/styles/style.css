@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("../fonts/BebasNeueProBoldItalic.eot");
-  src: url("../fonts/BebasNeueProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueProBoldItalic.woff2") format("woff2"), url("../fonts/BebasNeueProBoldItalic.woff") format("woff"), url("../fonts/BebasNeueProBoldItalic.ttf") format("truetype"), url("../fonts/BebasNeueProBoldItalic.svg") format("svg");
+  src: url("./fonts/BebasNeueProBoldItalic.eot");
+  src: url("./fonts/BebasNeueProBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeueProBoldItalic.woff2") format("woff2"), url("./fonts/BebasNeueProBoldItalic.woff") format("woff"), url("./fonts/BebasNeueProBoldItalic.ttf") format("truetype"), url("./fonts/BebasNeueProBoldItalic.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,6 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Bebas Neue', sans-serif !important;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 144rem;
+  max-width: 185rem !important;
   margin: 0 auto;
 }
 
@@ -48,6 +47,18 @@ a {
   cursor: pointer;
 }
 
+h2 {
+  letter-spacing: .8rem;
+  line-height: 12.16rem;
+  font-size: 9.6rem !important;
+}
+
+h4 {
+  letter-spacing: .5rem;
+  line-height: 3.8rem;
+  font-size: 3.2rem !important;
+}
+
 .none {
   display: none;
 }
@@ -60,6 +71,16 @@ a {
   display: block;
 }
 
+.btn {
+  letter-spacing: .22rem;
+  font-size: 2.2rem;
+  padding: 2rem 3rem;
+  background-color: #0069E4;
+  line-height: 2.2rem;
+  display: inline-block;
+  color: #fff;
+}
+
 .header {
   color: #fff;
   background-image: url("../images/header/main.png");
@@ -67,12 +88,14 @@ a {
   background-position-x: center;
   z-index: 10;
   font-size: 3.2rem;
-  padding-top: 2.8rem;
+  padding-top: 1.7rem;
+  letter-spacing: .5rem;
 }
 
 .header__title {
   font-size: 9.6rem;
   margin: 0 3rem;
+  letter-spacing: 1.7rem;
 }
 
 .header__paragraph {
@@ -81,12 +104,21 @@ a {
   font-size: 2rem;
   font-family: 'IBM Plex Sans';
   text-align: center;
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
 .header__rec {
-  top: -360px;
-  left: -310px;
   z-index: -5;
+  position: relative;
+  float: left;
+  left: -4rem;
+  top: -38rem;
+  padding-bottom: -38rem;
+}
+
+.header__subtitle {
+  padding-top: 1.2rem;
 }
 
 .popup {
@@ -156,5 +188,102 @@ body.noscroll {
 
 .logo {
   margin: 9rem 0 11.2rem;
+}
+
+.offer__title {
+  letter-spacing: .3rem;
+  font-size: 4.8rem;
+  margin-bottom: 8rem;
+  max-width: 57.6rem;
+}
+
+.offer-slider__item {
+  min-width: 75rem;
+}
+
+.offer__btn {
+  background-color: #E0013F;
+}
+
+.description {
+  margin-top: 4.4rem;
+  margin-left: 4.4rem;
+  text-transform: none;
+  z-index: 20;
+}
+
+.description__paragraph {
+  letter-spacing: 0;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: 'IBM Plex Sans';
+  max-width: 40.5rem;
+}
+
+.description__title {
+  font-size: 9.6rem;
+  letter-spacing: .5rem;
+  padding-bottom: 2.635rem;
+  text-transform: uppercase;
+}
+
+.about {
+  padding-top: 10rem;
+}
+
+.about-list__img {
+  width: 288px;
+  height: 290px;
+  z-index: 40;
+}
+
+.about-list__item {
+  height: 38rem;
+  margin-bottom: 6rem;
+}
+
+.about-list__item:nth-child(even) {
+  margin-top: 20.5rem;
+  margin-bottom: -18rem;
+}
+
+.opportunities {
+  background-image: url("../images/opportunities/light-blue.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 37rem;
+  top: -25rem;
+  position: relative;
+  z-index: 10;
+  height: 137.15rem !important;
+}
+
+.opportunities-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.opportunities-list__item {
+  padding: 2.8rem 3.8rem;
+  background-color: #fff;
+  height: 29rem;
+  max-width: 29rem;
+  margin: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.opportunities-list__title {
+  max-width: 21rem;
+  color: #E0013F;
+}
+
+.opportunities-list__img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-left: 10rem;
 }
 /*# sourceMappingURL=style.css.map */
