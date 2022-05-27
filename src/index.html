@@ -29,6 +29,11 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  max-width: 152.4rem !important;
+  margin: 0 auto;
+}
+
 ul, li {
   list-style: none;
   margin: 0;
@@ -256,10 +261,10 @@ body.noscroll {
   background-image: url("../images/opportunities/light-blue.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 37rem;
+  padding-top: 30rem;
   top: -25rem;
   position: relative;
-  z-index: 10;
+  z-index: -10;
   height: 137.15rem !important;
 }
 
@@ -290,6 +295,87 @@ body.noscroll {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-left: 10rem;
+}
+
+.opportunities__rec_first {
+  width: 52.52rem !important;
+  height: 42.185rem !important;
+  display: block;
+  float: right;
+  position: relative;
+  top: -22rem;
+  left: -45rem;
+  z-index: -14440;
+}
+
+.opportunities__rec_second {
+  z-index: 30;
+  position: relative;
+  left: 0rem;
+  top: -32.5rem;
+  width: 74.65rem;
+  height: 68.96rem;
+}
+
+.book {
+  background-image: url("../images/book/book-rec.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: -580px auto;
+  z-index: 600;
+  position: relative;
+  z-index: 80;
+  padding-top: 5.7rem;
+  width: 127.13rem;
+  height: 27.18rem;
+}
+
+.book-ice {
+  text-align: center;
+}
+
+.book-ice__title {
+  font-size: 5.6rem !important;
+}
+
+.book-ice__btn {
+  background-color: #0069E4;
+}
+
+.book-ice__paragraph {
+  font-size: 3.2rem;
+  letter-spacing: .4rem;
+  margin-top: 1rem;
+  margin-bottom: 4.95rem;
+}
+
+.benefits {
+  top: 28.7rem;
+  z-index: 60;
+  position: relative;
+  background-image: url("../images/benefits/benefits-rec.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  color: #fff;
+}
+
+.benefits__title {
+  padding-bottom: 10.8rem;
+  padding-top: 49.8rem;
+}
+
+.benefits-list {
+  padding-bottom: 34.04rem;
+}
+
+.benefits-list__title {
+  font-size: 2.4rem;
+}
+
+.benefits-list__item {
+  border-left: .1rem solid #fff;
+  border-right: .1rem solid #fff;
+  padding-left: 2.1rem;
 }
 /*# sourceMappingURL=style.css.map *//*!
  * Bootstrap Grid v5.2.0-beta1 (https://getbootstrap.com/)
@@ -405,25 +491,80 @@ body.noscroll {
         </ul>
       </div>
     </section>
-    <section class="opportunities">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6"> 
-            <h2 class="opportunities__title">возможности</h2>
+    <section>
+      <div class="opportunities__rec_first"><img src="../images/opportunities/rec-first.png" alt="rectangle"></div>
+      <div class="opportunities">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6"> 
+              <h2 class="opportunities__title">возможности</h2>
+            </div>
+            <div class="col-6">
+              <div class="opportunities-list d-flex">
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="opportunities-list d-flex">
-              <div class="opportunities-list__item"> 
-                <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
+        </div>
+        <div class="opportunities__rec_second"><img src="../images/opportunities/rec-second.png" alt="rectangle"></div>
+      </div>
+    </section>
+    <section class="book"> 
+      <div class="container">
+        <div class="book-ice"> 
+          <h2 class="book-ice__title">забронируйте лед</h2>
+          <p class="book-ice__paragraph">прямо сейчас</p><a class="book-ice__btn btn">оставить заявку</a>
+        </div>
+      </div>
+    </section>
+    <section class="benefits"> 
+      <div class="continer">
+        <div class="wrapper"> 
+          <h2 class="benefits__title">наши преимущества</h2>
+          <div class="benefits-list">
+            <div class="row g-0">
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">Высокий<br>потолок</h5><img class="benefits-list__img" src="../images/benefits/ceiling.png" alt="ceiling">
+                </div>
               </div>
-              <div class="opportunities-list__item"> 
-                <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">Доброжелательный<br>персонал</h5><img class="benefits-list__imging" src="../images/benefits/staff.png" alt="staff">
+                </div>
               </div>
-              <div class="opportunities-list__item"> 
-                <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">Даем <br>допинвентарь</h5><img class="benefits-list__img" src="../images/benefits/implements.png" alt="implements">
+                </div>
               </div>
-              <div class="opportunities-list__item"> 
-                <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">
+                     Раздевалка<br>открывается за час</h5><img class="benefits-list__img" src="../images/benefits/hour.png" alt="hour">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">
+                     Парковка<br>рядом</h5><img class="benefits-list__img" src="../images/benefits/parking.png" alt="parking">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="benefits-list__item">
+                  <h5 class="benefits-list__title">Зона спа,<br>сауна</h5><img class="benefits-list__img" src="../images/benefits/sauna.png" alt="sauna">
+                </div>
               </div>
             </div>
           </div>

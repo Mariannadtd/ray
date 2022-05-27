@@ -63,25 +63,89 @@ html
               h3.description__title зона спа
               p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
 
-    section.opportunities
+
+    section
+      .opportunities__rec_first
+        img(src="../images/opportunities/rec-first.png", alt="rectangle")
+      .opportunities
+        .container
+          .row.align-items-center
+            .col-6 
+              h2.opportunities__title возможности
+            .col-6
+              .opportunities-list.d-flex
+                .opportunities-list__item 
+                  h4.opportunities-list__title заточка коньков
+                  img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title кафе
+                  img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title сушилка
+                  img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title проведение мероприятий
+                  img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
+
+        .opportunities__rec_second
+          img(src="../images/opportunities/rec-second.png", alt="rectangle")
+
+    section.book 
       .container
-        .row.align-items-center
-          .col-6 
-            h2.opportunities__title возможности
-          .col-6
-            .opportunities-list.d-flex
-              .opportunities-list__item 
-                h4.opportunities-list__title заточка коньков
-                img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
-              .opportunities-list__item 
-                h4.opportunities-list__title кафе
-                img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
-              .opportunities-list__item 
-                h4.opportunities-list__title сушилка
-                img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
-              .opportunities-list__item 
-                h4.opportunities-list__title проведение мероприятий
-                img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
+        .book-ice  
+          h2.book-ice__title забронируйте лед
+          p.book-ice__paragraph прямо сейчас
+          a.book-ice__btn.btn оставить заявку
+
+    section.benefits  
+      .continer
+        .wrapper 
+          h2.benefits__title наши преимущества
+          .benefits-list
+            .row.g-0
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title
+                    | Высокий
+                    br
+                    | потолок
+                  img(src="../images/benefits/ceiling.png", alt="ceiling").benefits-list__img
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title
+                    | Доброжелательный
+                    br 
+                    | персонал
+                  img(src="../images/benefits/staff.png", alt="staff").benefits-list__imging
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title
+                    | Даем 
+                    br 
+                    | допинвентарь
+                  img(src="../images/benefits/implements.png", alt="implements").benefits-list__img
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title 
+                    | Раздевалка
+                    br 
+                    | открывается за час
+                  img(src="../images/benefits/hour.png", alt="hour").benefits-list__img
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title 
+                    | Парковка
+                    br 
+                    | рядом
+                  img(src="../images/benefits/parking.png", alt="parking").benefits-list__img
+              .col-2
+                .benefits-list__item
+                  h5.benefits-list__title
+                    | Зона спа,
+                    br 
+                    | сауна
+                  img(src="../images/benefits/sauna.png", alt="sauna").benefits-list__img
+
 
 
 
