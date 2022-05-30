@@ -31,7 +31,7 @@ body {
 
 .wrapper {
   max-width: 152.4rem !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 ul, li {
@@ -268,6 +268,11 @@ body.noscroll {
   height: 137.15rem !important;
 }
 
+.opportunities-wrapper {
+  max-width: 152.4rem !important;
+  margin: 0 auto;
+}
+
 .opportunities-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -277,13 +282,17 @@ body.noscroll {
   padding: 2.8rem 3.8rem;
   background-color: #fff;
   height: 29rem;
-  max-width: 29rem;
-  margin: 2.5rem;
+  max-width: 28.8rem;
+  margin: 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.opportunities-list__item:nth-child(odd) {
+  margin: 1rem 1rem;
 }
 
 .opportunities-list__title {
@@ -365,7 +374,7 @@ body.noscroll {
 }
 
 .benefits-list {
-  padding-bottom: 34.04rem;
+  padding-bottom: 36.04rem;
 }
 
 .benefits-list__title {
@@ -376,6 +385,82 @@ body.noscroll {
   border-left: .1rem solid #fff;
   border-right: .1rem solid #fff;
   padding-left: 2.1rem;
+}
+
+.gallery {
+  background-image: url("../images/gallery/bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  top: 9rem;
+  position: relative;
+}
+
+.gallery__img {
+  max-height: 43rem;
+  overflow: hidden;
+}
+
+.gallery__img_first {
+  max-width: 68.5rem;
+  max-height: 43rem;
+}
+
+.gallery__title {
+  margin-bottom: 8.77rem;
+}
+
+.gallery-block {
+  padding-top: 25.39rem;
+  padding-bottom: 38.025rem;
+}
+
+.gallery__rec {
+  position: relative;
+  right: -30rem;
+  float: right;
+  top: -11.5rem;
+  z-index: -10;
+}
+
+.events__title {
+  letter-spacing: normal;
+}
+
+.events-slider__date {
+  letter-spacing: 1.7rem;
+}
+
+.events-slider__text {
+  line-height: 3.2rem;
+}
+
+.events-slider__slide {
+  border-top: 0.2rem solid #0069E4;
+  border-bottom: 0.2rem solid #0069E4;
+  padding: 5.1rem 0 5.1rem 0;
+}
+
+.events-slider__slide_left {
+  color: #E0013F;
+}
+
+.events-slider__slide_left::after {
+  content: '';
+  width: .2rem;
+  height: 25.13rem;
+  background-color: #0069E4;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
+  display: block;
+  float: right;
+  top: -15rem;
+  position: relative;
+}
+
+.events-slider__slide_right {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-family: 'IBM Plex Sans';
 }
 /*# sourceMappingURL=style.css.map *//*!
  * Bootstrap Grid v5.2.0-beta1 (https://getbootstrap.com/)
@@ -430,88 +515,94 @@ body.noscroll {
     </header>
     <section class="offer"> 
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6">
-            <h3 class="offer__title">Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием</h3>
-            <div class="offer__btn btn">оставить заявку</div>
-          </div>
-          <div class="col-6"> 
-            <ul class="offer-slider"> 
-              <li class="offer-slider__item active"><img src="../images/offer/offer-slider1.png" alt="slider1"></li>
-            </ul>
+        <div class="wrapper">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <h3 class="offer__title">Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием</h3>
+              <div class="offer__btn btn">оставить заявку</div>
+            </div>
+            <div class="col-6"> 
+              <ul class="offer-slider"> 
+                <li class="offer-slider__item active"><img src="../images/offer/offer-slider1.png" alt="slider1"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="about"> 
       <div class="container">
-        <ul class="row about-list px-0">
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
-            <div class="description">
-              <h3 class="description__title">лед</h3>
-              <p class="description__paragraph">Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.</p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
-            <div class="description">
-              <h3 class="description__title">зал</h3>
-              <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice-rink.png">
-            <div class="description">
-              <h3 class="description__title">свет</h3>
-              <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/light.png">
-            <div class="description">
-              <h3 class="description__title">звук</h3>
-              <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/sound.png">
-            <div class="description">
-              <h3 class="description__title">раздевалки</h3>
-              <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/locker-room.png">
-            <div class="description">
-              <h3 class="description__title">тренажерный зал</h3>
-              <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
-            </div>
-          </li>
-          <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/gum.png">
-            <div class="description">
-              <h3 class="description__title">зона спа</h3>
-              <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
-            </div>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <ul class="row about-list px-0">
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
+              <div class="description">
+                <h3 class="description__title">лед</h3>
+                <p class="description__paragraph">Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.</p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
+              <div class="description">
+                <h3 class="description__title">зал</h3>
+                <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice-rink.png">
+              <div class="description">
+                <h3 class="description__title">свет</h3>
+                <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/light.png">
+              <div class="description">
+                <h3 class="description__title">звук</h3>
+                <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/sound.png">
+              <div class="description">
+                <h3 class="description__title">раздевалки</h3>
+                <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/locker-room.png">
+              <div class="description">
+                <h3 class="description__title">тренажерный зал</h3>
+                <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
+              </div>
+            </li>
+            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/gum.png">
+              <div class="description">
+                <h3 class="description__title">зона спа</h3>
+                <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section>
       <div class="opportunities__rec_first"><img src="../images/opportunities/rec-first.png" alt="rectangle"></div>
       <div class="opportunities">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-6"> 
-              <h2 class="opportunities__title">возможности</h2>
-            </div>
-            <div class="col-6">
-              <div class="opportunities-list d-flex">
-                <div class="opportunities-list__item"> 
-                  <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
-                </div>
-                <div class="opportunities-list__item"> 
-                  <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
-                </div>
-                <div class="opportunities-list__item"> 
-                  <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
-                </div>
-                <div class="opportunities-list__item"> 
-                  <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
+          <div class="wrapper">
+            <div class="row align-items-center">
+              <div class="col-6"> 
+                <h2 class="opportunities__title">возможности</h2>
+              </div>
+              <div class="col-6">
+                <div class="opportunities-list d-flex">
+                  <div class="opportunities-list__item"> 
+                    <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
+                  </div>
+                  <div class="opportunities-list__item"> 
+                    <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
+                  </div>
+                  <div class="opportunities-list__item"> 
+                    <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
+                  </div>
+                  <div class="opportunities-list__item"> 
+                    <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -564,6 +655,67 @@ body.noscroll {
               <div class="col-2">
                 <div class="benefits-list__item">
                   <h5 class="benefits-list__title">Зона спа,<br>сауна</h5><img class="benefits-list__img" src="../images/benefits/sauna.png" alt="sauna">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery"> 
+      <div class="gallery__rec"><img src="../images/gallery/gallery-rec.png" alt="gallery-rectangle"></div>
+      <div class="container"> 
+        <div class="gallery-block">
+          <div class="row">   
+            <div class="wrapper"> 
+              <div class="col"> 
+                <h2 class="gallery__title">галерея</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-start">
+              <ul class="gallery__img d-flex justify-content-start">
+                <li><img class="gallery__img_first" src="../images/gallery/gallery-first.png" alt="first"><img class="gallery__img_second" src="../images/gallery/gallery-second.png" alt="second"></li>
+                <li><img class="gallery__img_first" src="../images/gallery/gallery-third.png" alt="third"><img class="allery__img_second" src="../images/gallery/gallery-fourth.png" alt="fourth"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="events"> 
+      <div class="container">
+        <div class="wrapper">
+          <div class="row"> 
+            <div class="col-12">
+              <h2 class="events__title">события  </h2>
+            </div>
+            <div class="col-12">
+              <div class="events-slider">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="events-slider__slide d-flex justify-content-start">
+                      <div class="events-slider__slide_left">
+                        <h2 class="events-slider__date">12–14</h2>
+                        <h4 class="events-slider__month">апрель</h4>
+                      </div>
+                      <div class="events-slider__slide_right">
+                        <p class="events-slider__text">День открытых дверей</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="events-slider__slide d-flex justify-content-start g-0">
+                      <div class="events-slider__slide_left">
+                        <h2 class="events-slider__date">20–24</h2>
+                        <h4 class="events-slider__month">февраля</h4>
+                      </div>
+                      <div class="events-slider__slide_right">
+                        <p class="events-slider__text">Открытая тренировка</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

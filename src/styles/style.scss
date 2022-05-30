@@ -38,7 +38,7 @@ body {
 }
 .wrapper {
   max-width: 152.4rem !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 ul, li {
   list-style: none;
@@ -243,16 +243,23 @@ body {
   position: relative;
   z-index: -10;
   height: 137.15rem !important;
+  &-wrapper {
+    max-width: 152.4rem !important;
+    margin: 0 auto;
+  }
   &-list {
     flex-wrap: wrap;
     &__item {
       padding: 2.8rem 3.8rem;
       background-color: #fff;
       height: 29rem;
-      max-width: 29rem;
-      margin: 2.5rem;
+      max-width: 28.8rem;
+      margin: 1rem 1rem;
       display: flex;
       flex-wrap: wrap;
+      &:nth-child(odd) {
+        margin: 1rem 1rem;
+      }
     }
     &__title {
       max-width: 21rem;
@@ -332,7 +339,7 @@ body {
     padding-top: 49.8rem;
   }
   &-list {
-    padding-bottom: 34.04rem;
+    padding-bottom: 36.04rem;
     &__title {
       font-size: 2.4rem;
     }
@@ -340,6 +347,80 @@ body {
       border-left: .1rem solid #fff;
       border-right: .1rem solid #fff;
       padding-left: 2.1rem;
+    }
+  }
+}
+
+
+
+// GALLERY
+.gallery {
+  background-image: url('../images/gallery/bg.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  top: 9rem;
+  position: relative;
+  &__img {
+    max-height: 43rem;
+    overflow: hidden;
+    &_first {
+      max-width: 68.5rem;
+      max-height: 43rem;
+    }
+  }
+  &__title {
+    margin-bottom: 8.77rem;
+  }
+  &-block {
+    padding-top: 25.39rem;
+    padding-bottom: 38.025rem;
+  }
+  &__rec {
+    position: relative;
+    right: -30rem;
+    float: right;
+    top: -11.5rem;
+    z-index: -10;
+  }
+}
+
+
+
+// EVENTS
+.events {
+  &__title {
+    letter-spacing: normal;
+  }
+  &-slider {
+    &__date {
+      letter-spacing: 1.7rem;
+    }
+    &__text {
+      line-height: 3.2rem;
+    }
+    &__slide {
+      &_left {
+        color: $red;
+        &::after {
+          content: '';
+          width: .2rem;
+          height: 25.13rem;
+          background-color: $blue;
+          transform: rotate(11deg);
+          display: block;
+          float: right;
+          top: -15rem;
+          position: relative;
+        }
+      }
+      &_right {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-family: 'IBM Plex Sans';
+      }
+      border-top: .2rem solid $blue;
+      border-bottom: .2rem solid $blue;
+      padding: 5.1rem 0 5.1rem 0;
     }
   }
 }
