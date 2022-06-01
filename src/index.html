@@ -94,6 +94,7 @@ p {
   line-height: 2.2rem;
   display: inline-block;
   color: #fff;
+  font-family: 'IBM Plex Sans';
 }
 
 .header {
@@ -120,6 +121,7 @@ p {
   text-align: center;
   letter-spacing: 0rem;
   text-transform: none;
+  font-family: 'IBM Plex Sans';
 }
 
 .header__rec {
@@ -486,7 +488,6 @@ body.noscroll {
   background-repeat: no-repeat;
   background-position-x: center;
   padding-top: 45.23rem;
-  padding-bottom: 32.12rem;
   z-index: 500;
 }
 
@@ -528,9 +529,8 @@ body.noscroll {
 }
 
 .comment__rec_second {
-  float: left;
   position: relative;
-  top: -15rem;
+  top: -22rem;
   z-index: 1000;
   width: 72.585rem;
   height: 63.902rem;
@@ -543,6 +543,87 @@ body.noscroll {
   padding-top: 32.674rem;
   padding-bottom: 25.466rem;
   color: #fff;
+  z-index: 1200;
+  position: relative;
+  margin: -46rem;
+}
+
+.connection__arrow {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20rem;
+}
+
+.connection__phone {
+  margin-right: .5rem;
+}
+
+.connection__phone::after {
+  content: '';
+  position: relative;
+  height: 2.2rem;
+  width: 0.2rem;
+  display: block;
+  background-color: #fff;
+}
+
+.map {
+  margin-top: 19.6rem;
+  background-image: url("../images/map/map.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.map__logo {
+  margin: 0 auto;
+  display: block;
+  padding: 22.652rem 0 24.605rem;
+}
+
+.map__rec {
+  width: 42.02rem;
+  height: 44.513rem;
+  position: relative;
+  top: -26rem;
+  left: -10rem;
+}
+
+.ask {
+  margin-top: -45rem;
+  background-color: #F1F7FF;
+  padding: 15.284rem;
+  text-align: center;
+}
+
+.ask__title {
+  font-size: 5.6rem;
+  letter-spacing: .8rem;
+}
+
+.ask__text {
+  padding: .6rem 0 6rem;
+}
+
+.footer {
+  margin-top: -18.6rem;
+  font-family: 'IBM Plex Sans';
+  background-color: #E0013F;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding: 4.6rem 0 5rem;
+}
+
+.footer__logo {
+  display: block;
+  padding: 10.17rem 0 13.226rem;
+  margin: 0 auto;
+}
+
+.footer__privacy {
+  text-align: center;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map *//*!
  * Bootstrap Grid v5.2.0-beta1 (https://getbootstrap.com/)
@@ -831,32 +912,55 @@ body.noscroll {
           </div>
         </div>
       </div><img class="comment__rec_second" src="../images/comment/comment-rec2.png" alt="rectangle">
-      <section class="connection">
-        <div class="container">
-          <div class="wrapper"> 
-            <div class="row"> 
-              <div class="col-6">
-                <h2 class="connection__title">Контакты</h2>
-              </div>
-              <div class="col-6">
-                <h4 class="connection__addres">Москва, Волоколамское шоссе, д. 88</h4>
-                <div class="row"> 
-                  <div class="col-5">
-                    <h4 class="connection__phone">Тел: 8 495 602 02 32</h4>
-                  </div>
-                  <div class="col-7">
-                    <h4 class="connection__mail">Почта: aolkluch@yandex.ru</h4>
-                  </div>
+    </section>
+    <section class="connection">
+      <div class="container">
+        <div class="wrapper"> 
+          <div class="row g-0">
+            <div class="col-6">
+              <h2 class="connection__title">Контакты</h2>
+            </div>
+            <div class="col-6">
+              <h4 class="connection__addres">Москва, Волоколамское шоссе, д. 88</h4>
+              <div class="row g-0">
+                <div class="col-5">
+                  <h4 class="connection__phone">Тел: 8 495 602 02 32</h4>
+                </div>
+                <div class="col-7">
+                  <h4 class="connection__mail">Почта: aolkluch@yandex.ru</h4>
                 </div>
               </div>
             </div>
-          </div>
+          </div><img class="connection__arrow" src="../images/map/arrow.png" alt="arrow">
         </div>
-      </section>
+      </div>
     </section>
-    <footer> 
-      <div class="footer"> 
-        <h1>Подвал</h1>
+    <section class="map"> 
+      <div class="container"> 
+        <div class="map-block"><img class="map__logo" src="../images/map/logo.png" alt="logo"></div>
+      </div><img class="map__rec" src="../images/map/map-rec.png" alt="rectangle">
+    </section>
+    <section class="ask"> 
+      <div class="container">
+        <div class="ask-wrap upper">
+          <h5 class="ask__title">Остались вопросы?</h5>
+          <h4 class="ask__text">Свяжитесь с нами</h4><a class="ask__btn btn">Оставить заявку</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="row d-flex justify-content-between">
+          <div class="col-3 d-flex justify-content-end flex-column"><span class="footer__date">© 2022</span>
+            <div class="footer__socials"><span>Мы в соцсетях:</span>
+              <div class="footer__links"><a>VK </a><a>OK</a><a>Telegram</a></div>
+            </div>
+          </div>
+          <div class="col-6 footer-center"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
+          <div class="col-3"><span class="footer__rights">
+               Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres">
+               Москва, <br>Волоколамское шоссе, д.88</span></div>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
