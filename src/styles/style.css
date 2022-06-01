@@ -620,4 +620,10 @@ body.noscroll {
   text-align: center;
   display: block;
 }
+
+.footer__rec {
+  display: block;
+  margin: auto 0;
+  position: relative;
+}
 /*# sourceMappingURL=style.css.map */

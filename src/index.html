@@ -625,6 +625,12 @@ body.noscroll {
   text-align: center;
   display: block;
 }
+
+.footer__rec {
+  display: block;
+  margin: auto 0;
+  position: relative;
+}
 /*# sourceMappingURL=style.css.map *//*!
  * Bootstrap Grid v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -948,18 +954,17 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer"><img class="footer__rec" src="../images/gallery/gallery-rec.png" alt="rec">
       <div class="container"> 
         <div class="row d-flex justify-content-between">
-          <div class="col-3 d-flex justify-content-end flex-column"><span class="footer__date">© 2022</span>
-            <div class="footer__socials"><span>Мы в соцсетях:</span>
-              <div class="footer__links"><a>VK </a><a>OK</a><a>Telegram</a></div>
+          <div class="col-2 d-flex align-content-between flex-column justify-content-between"><span class="footer__date align-self-end">© 2022</span>
+            <div class="footer__socials align-self-end"><span>Мы в соцсетях:</span>
+              <div class="footer__links align-self-end"><a>VK </a><a>OK</a><a>Telegram</a></div>
             </div>
           </div>
-          <div class="col-6 footer-center"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
-          <div class="col-3"><span class="footer__rights">
-               Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres">
-               Москва, <br>Волоколамское шоссе, д.88</span></div>
+          <div class="col-8 footer-center"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
+          <div class="col-2 d-flex align-content-between flex-column justify-content-between"><span class="footer__rights">
+               Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres">Москва, <br>Волоколамское шоссе, д.88</span></div>
         </div>
       </div>
     </footer>
