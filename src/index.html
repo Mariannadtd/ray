@@ -8,7 +8,15 @@
   font-family: 'Bebas Neue';
   src: url("./fonts/BebasNeueProBoldItalic.eot");
   src: url("./fonts/BebasNeueProBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeueProBoldItalic.woff2") format("woff2"), url("./fonts/BebasNeueProBoldItalic.woff") format("woff"), url("./fonts/BebasNeueProBoldItalic.ttf") format("truetype"), url("./fonts/BebasNeueProBoldItalic.svg") format("svg");
-  font-weight: normal;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("./fonts/BebasNeueBold.eot");
+  src: url("./fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeueBold.woff2") format("woff2"), url("./fonts/BebasNeueBold.woff") format("woff"), url("./fonts/BebasNeueBold.ttf") format("truetype"), url("./fonts/BebasNeueBold.svg") format("svg");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -17,6 +25,18 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 7px;
+  }
 }
 
 body {
@@ -87,14 +107,14 @@ p {
 }
 
 .btn {
-  letter-spacing: .22rem;
+  letter-spacing: .5rem;
   font-size: 2.2rem;
   padding: 2rem 3rem;
   background-color: #0069E4;
   line-height: 2.2rem;
   display: inline-block;
   color: #fff;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Bebas Neue Bold';
 }
 
 .header {
@@ -127,14 +147,13 @@ p {
 .header__rec {
   z-index: -5;
   position: relative;
-  float: left;
   left: -4rem;
   top: -38rem;
   padding-bottom: -38rem;
 }
 
 .header__subtitle {
-  padding-top: 1.2rem;
+  padding-top: 2.4rem;
 }
 
 .popup {
@@ -251,8 +270,7 @@ body.noscroll {
 }
 
 .about-list__img {
-  width: 288px;
-  height: 290px;
+  width: 100%;
   z-index: 40;
 }
 
@@ -274,6 +292,7 @@ body.noscroll {
   top: -25rem;
   position: relative;
   z-index: -10;
+  margin-top: -43em;
   height: 137.15rem !important;
 }
 
@@ -319,10 +338,9 @@ body.noscroll {
   width: 52.52rem !important;
   height: 42.185rem !important;
   display: block;
-  float: right;
   position: relative;
-  top: -22rem;
-  left: -45rem;
+  top: -21rem;
+  left: 125rem;
   z-index: -14440;
 }
 
@@ -419,17 +437,16 @@ body.noscroll {
   margin-bottom: 8.77rem;
 }
 
-.gallery-block {
-  padding-top: 25.39rem;
-  padding-bottom: 41rem;
-}
-
 .gallery__rec {
   position: relative;
-  right: -30rem;
-  float: right;
-  top: -11.5rem;
+  right: -157rem;
+  top: -12rem;
   z-index: -10;
+}
+
+.gallery-block {
+  padding-bottom: 50rem;
+  margin-top: -40rem;
 }
 
 .events__title {
@@ -487,7 +504,7 @@ body.noscroll {
   background-image: url("../images/comment/comment-bg.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 45.23rem;
+  padding-top: 6rem;
   z-index: 500;
 }
 
@@ -521,11 +538,10 @@ body.noscroll {
 .comment__rec {
   width: 40.93rem;
   height: 37.815rem;
-  float: right;
   z-index: 600;
   position: relative;
-  top: -28rem;
-  left: -10rem;
+  right: -77%;
+  top: 7rem;
 }
 
 .comment__rec_second {
@@ -556,7 +572,7 @@ body.noscroll {
 }
 
 .connection__phone {
-  margin-right: .5rem;
+  margin-right: 3rem;
 }
 
 .connection__phone::after {
@@ -566,6 +582,8 @@ body.noscroll {
   width: 0.2rem;
   display: block;
   background-color: #fff;
+  top: -3rem;
+  left: 34rem;
 }
 
 .map {
@@ -646,6 +664,11 @@ body.noscroll {
   margin-bottom: -20rem;
 }
 
+.footer__socials {
+  text-align: right;
+  margin-bottom: -2.5rem;
+}
+
 .footer__socials::after {
   width: 0.2rem;
   height: 2rem;
@@ -694,7 +717,7 @@ body.noscroll {
       <div class="header">
         <div class="container"> 
           <div class="row">
-            <div class="col-12 d-flex justify-content-between align-items-center"><a class="header__btn" href="#">Забронировать лед</a>
+            <div class="col-12 d-flex justify-content-between align-items-center"><a class="header__btn upper" href="#">Забронировать лед</a>
               <div class="hamburger">
                 <div class="hamburger__field" id="hamburger"> <span class="bar"> </span><span class="bar"></span></div>
               </div>
@@ -726,94 +749,123 @@ body.noscroll {
     </header>
     <section class="offer"> 
       <div class="container">
-        <div class="wrapper">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <h3 class="offer__title">Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием</h3>
-              <div class="offer__btn btn">оставить заявку</div>
-            </div>
-            <div class="col-6"> 
-              <ul class="offer-slider"> 
-                <li class="offer-slider__item active"><img src="../images/offer/offer-slider1.png" alt="slider1"></li>
-              </ul>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-5 offset-lg-1">
+            <h3 class="offer__title upper">Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием</h3>
+            <div class="offer__btn btn">оставить заявку</div>
+          </div>
+          <div class="col-6"> 
+            <ul class="offer-slider"> 
+              <li class="offer-slider__item active"><img src="../images/offer/offer-slider1.png" alt="slider1"></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <section class="about"> 
       <div class="container">
-        <div class="wrapper">
-          <ul class="row about-list px-0">
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
-              <div class="description">
-                <h3 class="description__title">лед</h3>
-                <p class="description__paragraph">Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.</p>
+        <ul class="row about-list px-0">
+          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">лед</h3>
+                  <p class="description__paragraph">Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.</p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice.png">
-              <div class="description">
-                <h3 class="description__title">зал</h3>
-                <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
+            </div>
+          </li>
+          <li class="col-6 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">зал</h3>
+                  <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/ice-rink.png">
-              <div class="description">
-                <h3 class="description__title">свет</h3>
-                <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
+            </div>
+          </li>
+          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/ice-rink.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">свет</h3>
+                  <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/light.png">
-              <div class="description">
-                <h3 class="description__title">звук</h3>
-                <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
+            </div>
+          </li>
+          <li class="col-6 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">звук</h3>
+                  <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/sound.png">
-              <div class="description">
-                <h3 class="description__title">раздевалки</h3>
-                <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
+            </div>
+          </li>
+          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/sound.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">раздевалки</h3>
+                  <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/locker-room.png">
-              <div class="description">
-                <h3 class="description__title">тренажерный зал</h3>
-                <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
+            </div>
+          </li>
+          <li class="col-6 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/locker-room.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">тренажерный зал</h3>
+                  <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
+                </div>
               </div>
-            </li>
-            <li class="col-6 about-list__item d-flex justify-content-start"><img class="about-list__img" src="../images/about/gum.png">
-              <div class="description">
-                <h3 class="description__title">зона спа</h3>
-                <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
+            </div>
+          </li>
+          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">зона спа</h3>
+                  <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
+                </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section>
       <div class="opportunities__rec_first"><img src="../images/opportunities/rec-first.png" alt="rectangle"></div>
       <div class="opportunities">
         <div class="container">
-          <div class="wrapper">
-            <div class="row align-items-center">
-              <div class="col-6"> 
-                <h2 class="opportunities__title">возможности</h2>
-              </div>
-              <div class="col-6">
-                <div class="opportunities-list d-flex">
-                  <div class="opportunities-list__item"> 
-                    <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
-                  </div>
-                  <div class="opportunities-list__item"> 
-                    <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
-                  </div>
-                  <div class="opportunities-list__item"> 
-                    <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
-                  </div>
-                  <div class="opportunities-list__item"> 
-                    <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
-                  </div>
+          <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1">
+              <h2 class="opportunities__title">возможности</h2>
+            </div>
+            <div class="col-6">
+              <div class="opportunities-list d-flex">
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">кафе</h4><img class="opportunities-list__img" src="../images/opportunities/drinks.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">сушилка</h4><img class="opportunities-list__img" src="../images/opportunities/dryer.png" alt="">
+                </div>
+                <div class="opportunities-list__item"> 
+                  <h4 class="opportunities-list__title">проведение мероприятий</h4><img class="opportunities-list__img" src="../images/opportunities/sound.png" alt="">
                 </div>
               </div>
             </div>
@@ -877,11 +929,9 @@ body.noscroll {
       <div class="gallery__rec"><img src="../images/gallery/gallery-rec.png" alt="gallery-rectangle"></div>
       <div class="container"> 
         <div class="gallery-block">
-          <div class="row">   
-            <div class="wrapper"> 
-              <div class="col"> 
-                <h2 class="gallery__title">галерея</h2>
-              </div>
+          <div class="row">    
+            <div class="col-lg-11 offset-lg-1"> 
+              <h2 class="gallery__title">галерея</h2>
             </div>
           </div>
           <div class="row">
@@ -897,34 +947,32 @@ body.noscroll {
     </section>
     <section class="events"> 
       <div class="container">
-        <div class="wrapper">
-          <div class="row"> 
-            <div class="col-12">
-              <h2 class="events__title">события  </h2>
-            </div>
-            <div class="col-12">
-              <div class="events-slider">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="events-slider__slide d-flex justify-content-start">
-                      <div class="events-slider__slide_left">
-                        <h2 class="events-slider__date">12–14</h2>
-                        <h4 class="events-slider__month">апрель</h4>
-                      </div>
-                      <div class="events-slider__slide_right">
-                        <p class="events-slider__text">День открытых дверей</p>
-                      </div>
+        <div class="row"> 
+          <div class="col-lg-11 offset-lg-1">
+            <h2 class="events__title">события  </h2>
+          </div>
+          <div class="col-12">
+            <div class="events-slider">
+              <div class="row">
+                <div class="col-lg-5 offset-lg-1">
+                  <div class="events-slider__slide d-flex justify-content-start">
+                    <div class="events-slider__slide_left">
+                      <h2 class="events-slider__date">12–14</h2>
+                      <h4 class="events-slider__month">апрель</h4>
+                    </div>
+                    <div class="events-slider__slide_right">
+                      <p class="events-slider__text">День открытых дверей</p>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="events-slider__slide d-flex justify-content-start g-0">
-                      <div class="events-slider__slide_left">
-                        <h2 class="events-slider__date">20–24</h2>
-                        <h4 class="events-slider__month">февраля</h4>
-                      </div>
-                      <div class="events-slider__slide_right">
-                        <p class="events-slider__text">Открытая тренировка</p>
-                      </div>
+                </div>
+                <div class="col-5">
+                  <div class="events-slider__slide d-flex justify-content-start g-0">
+                    <div class="events-slider__slide_left">
+                      <h2 class="events-slider__date">20–24</h2>
+                      <h4 class="events-slider__month">февраля</h4>
+                    </div>
+                    <div class="events-slider__slide_right">
+                      <p class="events-slider__text">Открытая тренировка</p>
                     </div>
                   </div>
                 </div>
@@ -934,27 +982,26 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="comment"><img class="comment__rec" src="../images/gallery/gallery-rec.png" alt="rectangle">
+    <section class="comment">
+      <div class="comment__rec"><img src="../images/comment/comment-rec.png" alt="rectangle"></div>
       <div class="container"> 
-        <div class="wrapper">
-          <div class="row d-flex overflow-visible">
-            <div class="col-6">
-              <h2 class="comment__title">Отзывы</h2>
-            </div>
-            <div class="col-6 overflow-visible">
-              <div class="comment-slider d-flex justify-content-start">
-                <div class="comment-slider__item">
-                  <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
-                    <h4 class="comment-slider__name">Павел К.</h4>
-                  </div>
-                  <p class="comment-slider__text">Удобное местоположение. Быстро нашли взаимопонимание с сотрудниками. Отлично провели тренировку, площадка норм</p>
+        <div class="row d-flex overflow-visible">
+          <div class="col-5 offset-lg-1">
+            <h2 class="comment__title">Отзывы</h2>
+          </div>
+          <div class="col-6 overflow-visible">
+            <div class="comment-slider d-flex justify-content-start">
+              <div class="comment-slider__item">
+                <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
+                  <h4 class="comment-slider__name">Павел К.</h4>
                 </div>
-                <div class="comment-slider__item">
-                  <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
-                    <h4 class="comment-slider__name">Олег В.</h4>
-                  </div>
-                  <p class="comment-slider__text">Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. </p>
+                <p class="comment-slider__text">Удобное местоположение. Быстро нашли взаимопонимание с сотрудниками. Отлично провели тренировку, площадка норм</p>
+              </div>
+              <div class="comment-slider__item">
+                <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
+                  <h4 class="comment-slider__name">Олег В.</h4>
                 </div>
+                <p class="comment-slider__text">Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. </p>
               </div>
             </div>
           </div>
@@ -963,24 +1010,22 @@ body.noscroll {
     </section>
     <section class="connection">
       <div class="container">
-        <div class="wrapper"> 
-          <div class="row g-0">
-            <div class="col-6">
-              <h2 class="connection__title">Контакты</h2>
-            </div>
-            <div class="col-6">
-              <h4 class="connection__addres">Москва, Волоколамское шоссе, д. 88</h4>
-              <div class="row g-0">
-                <div class="col-5">
-                  <h4 class="connection__phone">Тел: 8 495 602 02 32</h4>
-                </div>
-                <div class="col-7">
-                  <h4 class="connection__mail">Почта: aolkluch@yandex.ru</h4>
-                </div>
+        <div class="row g-0">
+          <div class="col-5 offset-1">
+            <h2 class="connection__title">Контакты</h2>
+          </div>
+          <div class="col-6">
+            <h4 class="connection__addres">Москва, Волоколамское шоссе, д. 88</h4>
+            <div class="row g-0">
+              <div class="col-5">
+                <h4 class="connection__phone">Тел: 8 495 602 02 32</h4>
+              </div>
+              <div class="col-7">
+                <h4 class="connection__mail">Почта: aolkluch@mail.ru</h4>
               </div>
             </div>
-          </div><img class="connection__arrow" src="../images/map/arrow.png" alt="arrow">
-        </div>
+          </div>
+        </div><img class="connection__arrow" src="../images/map/arrow.png" alt="arrow">
       </div>
     </section>
     <section class="map"> 

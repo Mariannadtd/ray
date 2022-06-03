@@ -13,57 +13,76 @@ html
 
     section.offer 
       .container
-        .wrapper
-          .row.align-items-center
-            .col-6
-              h3.offer__title Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
-              .offer__btn.btn оставить заявку
-            .col-6 
-              ul.offer-slider  
-                li.offer-slider__item.active
-                  img(src="../images/offer/offer-slider1.png", alt="slider1")
-                //- li.offer-slider__item
-                //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
+        .row.align-items-center
+          .col-5.offset-lg-1
+            h3.offer__title.upper Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
+            .offer__btn.btn оставить заявку
+          .col-6 
+            ul.offer-slider  
+              li.offer-slider__item.active
+                img(src="../images/offer/offer-slider1.png", alt="slider1")
+              //- li.offer-slider__item
+              //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
 
     section.about 
       .container
-        .wrapper
-          ul.row.about-list.px-0
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/ice.png").about-list__img
-              .description
-                h3.description__title лед
-                p.description__paragraph Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/ice.png").about-list__img
-              .description
-                h3.description__title зал
-                p.description__paragraph Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. 
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/ice-rink.png").about-list__img
-              .description
-                h3.description__title свет
-                p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/light.png").about-list__img
-              .description
-                h3.description__title звук
-                p.description__paragraph Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. 
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/sound.png").about-list__img
-              .description
-                h3.description__title раздевалки
-                p.description__paragraph Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/locker-room.png").about-list__img
-              .description
-                h3.description__title тренажерный зал
-                p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
-            li.col-6.about-list__item.d-flex.justify-content-start
-              img(src="../images/about/gum.png").about-list__img
-              .description
-                h3.description__title зона спа
-                p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
+        ul.row.about-list.px-0
+          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/ice.png").about-list__img
+                .col-7.description
+                  h3.description__title лед
+                  p.description__paragraph Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/ice.png").about-list__img
+                .col-7.description
+                  h3.description__title зал
+                  p.description__paragraph Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. 
+          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/ice-rink.png").about-list__img
+                .col-7.description
+                  h3.description__title свет
+                  p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/light.png").about-list__img
+                .col-7.description
+                  h3.description__title звук
+                  p.description__paragraph Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. 
+          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/sound.png").about-list__img
+                .col-7.description
+                  h3.description__title раздевалки
+                  p.description__paragraph Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.
+          li.col-6.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/locker-room.png").about-list__img
+                .col-7.description
+                  h3.description__title тренажерный зал
+                  p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
+          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+            .row
+              .d-flex.justify-content-between
+                .col-5
+                  img(src="../images/about/gum.png").about-list__img
+                .col-7.description
+                  h3.description__title зона спа
+                  p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
 
 
     section
@@ -71,24 +90,23 @@ html
         img(src="../images/opportunities/rec-first.png", alt="rectangle")
       .opportunities
         .container
-          .wrapper
-            .row.align-items-center
-              .col-6 
-                h2.opportunities__title возможности
-              .col-6
-                .opportunities-list.d-flex
-                  .opportunities-list__item 
-                    h4.opportunities-list__title заточка коньков
-                    img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
-                  .opportunities-list__item 
-                    h4.opportunities-list__title кафе
-                    img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
-                  .opportunities-list__item 
-                    h4.opportunities-list__title сушилка
-                    img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
-                  .opportunities-list__item 
-                    h4.opportunities-list__title проведение мероприятий
-                    img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
+          .row.align-items-center
+            .col-lg-5.offset-lg-1
+              h2.opportunities__title возможности
+            .col-6
+              .opportunities-list.d-flex
+                .opportunities-list__item 
+                  h4.opportunities-list__title заточка коньков
+                  img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title кафе
+                  img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title сушилка
+                  img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title проведение мероприятий
+                  img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
 
         .opportunities__rec_second
           img(src="../images/opportunities/rec-second.png", alt="rectangle")
@@ -154,10 +172,9 @@ html
         img(src="../images/gallery/gallery-rec.png", alt="gallery-rectangle")
       .container  
         .gallery-block
-          .row    
-            .wrapper  
-              .col  
-                h2.gallery__title галерея
+          .row     
+            .col-lg-11.offset-lg-1 
+              h2.gallery__title галерея
           .row
             .col.d-flex.justify-content-start
               ul.gallery__img.d-flex.justify-content-start
@@ -170,63 +187,61 @@ html
               
     section.events 
       .container
-        .wrapper
-          .row 
-            .col-12
-              h2.events__title события  
-            .col-12
-              .events-slider
-                .row
-                  .col-6
-                    .events-slider__slide.d-flex.justify-content-start
-                      .events-slider__slide_left
-                        h2.events-slider__date 12–14
-                        h4.events-slider__month апрель
-                      .events-slider__slide_right
-                        p.events-slider__text День открытых дверей
-                  .col-6
-                    .events-slider__slide.d-flex.justify-content-start.g-0
-                      .events-slider__slide_left
-                        h2.events-slider__date 20–24
-                        h4.events-slider__month февраля
-                      .events-slider__slide_right
-                        p.events-slider__text Открытая тренировка
+        .row 
+          .col-lg-11.offset-lg-1
+            h2.events__title события  
+          .col-12
+            .events-slider
+              .row
+                .col-lg-5.offset-lg-1
+                  .events-slider__slide.d-flex.justify-content-start
+                    .events-slider__slide_left
+                      h2.events-slider__date 12–14
+                      h4.events-slider__month апрель
+                    .events-slider__slide_right
+                      p.events-slider__text День открытых дверей
+                .col-5
+                  .events-slider__slide.d-flex.justify-content-start.g-0
+                    .events-slider__slide_left
+                      h2.events-slider__date 20–24
+                      h4.events-slider__month февраля
+                    .events-slider__slide_right
+                      p.events-slider__text Открытая тренировка
 
     section.comment
-      img(src="../images/gallery/gallery-rec.png", alt="rectangle").comment__rec
+      .comment__rec
+        img(src="../images/comment/comment-rec.png", alt="rectangle")
       .container 
-        .wrapper
-          .row.d-flex.overflow-visible
-            .col-6
-              h2.comment__title Отзывы
-            .col-6.overflow-visible
-              .comment-slider.d-flex.justify-content-start
-                .comment-slider__item
-                  .comment-slider__item_top.d-flex.justify-content-between
-                    img(src="../images/comment/union.png", alt="union").comment-slider__img
-                    h4.comment-slider__name Павел К.
-                  p.comment-slider__text Удобное местоположение. Быстро нашли взаимопонимание с сотрудниками. Отлично провели тренировку, площадка норм
-                .comment-slider__item
-                  .comment-slider__item_top.d-flex.justify-content-between
-                    img(src="../images/comment/union.png", alt="union").comment-slider__img
-                    h4.comment-slider__name Олег В.
-                  p.comment-slider__text Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. 
+        .row.d-flex.overflow-visible
+          .col-5.offset-lg-1
+            h2.comment__title Отзывы
+          .col-6.overflow-visible
+            .comment-slider.d-flex.justify-content-start
+              .comment-slider__item
+                .comment-slider__item_top.d-flex.justify-content-between
+                  img(src="../images/comment/union.png", alt="union").comment-slider__img
+                  h4.comment-slider__name Павел К.
+                p.comment-slider__text Удобное местоположение. Быстро нашли взаимопонимание с сотрудниками. Отлично провели тренировку, площадка норм
+              .comment-slider__item
+                .comment-slider__item_top.d-flex.justify-content-between
+                  img(src="../images/comment/union.png", alt="union").comment-slider__img
+                  h4.comment-slider__name Олег В.
+                p.comment-slider__text Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. 
       img(src="../images/comment/comment-rec2.png", alt="rectangle").comment__rec_second
 
     section.connection
       .container
-        .wrapper 
-          .row.g-0
-            .col-6
-              h2.connection__title Контакты
-            .col-6
-              h4.connection__addres Москва, Волоколамское шоссе, д. 88
-              .row.g-0
-                .col-5
-                  h4.connection__phone Тел: 8 495 602 02 32
-                .col-7
-                  h4.connection__mail Почта: aolkluch@yandex.ru
-          img(src="../images/map/arrow.png", alt="arrow").connection__arrow
+        .row.g-0
+          .col-5.offset-1
+            h2.connection__title Контакты
+          .col-6
+            h4.connection__addres Москва, Волоколамское шоссе, д. 88
+            .row.g-0
+              .col-5
+                h4.connection__phone Тел: 8 495 602 02 32
+              .col-7
+                h4.connection__mail Почта: aolkluch@mail.ru
+        img(src="../images/map/arrow.png", alt="arrow").connection__arrow
 
     section.map 
       .container 

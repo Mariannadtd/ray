@@ -3,7 +3,15 @@
   font-family: 'Bebas Neue';
   src: url("./fonts/BebasNeueProBoldItalic.eot");
   src: url("./fonts/BebasNeueProBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeueProBoldItalic.woff2") format("woff2"), url("./fonts/BebasNeueProBoldItalic.woff") format("woff"), url("./fonts/BebasNeueProBoldItalic.ttf") format("truetype"), url("./fonts/BebasNeueProBoldItalic.svg") format("svg");
-  font-weight: normal;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("./fonts/BebasNeueBold.eot");
+  src: url("./fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeueBold.woff2") format("woff2"), url("./fonts/BebasNeueBold.woff") format("woff"), url("./fonts/BebasNeueBold.ttf") format("truetype"), url("./fonts/BebasNeueBold.svg") format("svg");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -12,6 +20,18 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 7px;
+  }
 }
 
 body {
@@ -82,14 +102,14 @@ p {
 }
 
 .btn {
-  letter-spacing: .22rem;
+  letter-spacing: .5rem;
   font-size: 2.2rem;
   padding: 2rem 3rem;
   background-color: #0069E4;
   line-height: 2.2rem;
   display: inline-block;
   color: #fff;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Bebas Neue Bold';
 }
 
 .header {
@@ -122,14 +142,13 @@ p {
 .header__rec {
   z-index: -5;
   position: relative;
-  float: left;
   left: -4rem;
   top: -38rem;
   padding-bottom: -38rem;
 }
 
 .header__subtitle {
-  padding-top: 1.2rem;
+  padding-top: 2.4rem;
 }
 
 .popup {
@@ -246,8 +265,7 @@ body.noscroll {
 }
 
 .about-list__img {
-  width: 288px;
-  height: 290px;
+  width: 100%;
   z-index: 40;
 }
 
@@ -269,6 +287,7 @@ body.noscroll {
   top: -25rem;
   position: relative;
   z-index: -10;
+  margin-top: -43em;
   height: 137.15rem !important;
 }
 
@@ -314,10 +333,9 @@ body.noscroll {
   width: 52.52rem !important;
   height: 42.185rem !important;
   display: block;
-  float: right;
   position: relative;
-  top: -22rem;
-  left: -45rem;
+  top: -21rem;
+  left: 125rem;
   z-index: -14440;
 }
 
@@ -414,17 +432,16 @@ body.noscroll {
   margin-bottom: 8.77rem;
 }
 
-.gallery-block {
-  padding-top: 25.39rem;
-  padding-bottom: 41rem;
-}
-
 .gallery__rec {
   position: relative;
-  right: -30rem;
-  float: right;
-  top: -11.5rem;
+  right: -157rem;
+  top: -12rem;
   z-index: -10;
+}
+
+.gallery-block {
+  padding-bottom: 50rem;
+  margin-top: -40rem;
 }
 
 .events__title {
@@ -482,7 +499,7 @@ body.noscroll {
   background-image: url("../images/comment/comment-bg.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 45.23rem;
+  padding-top: 6rem;
   z-index: 500;
 }
 
@@ -516,11 +533,10 @@ body.noscroll {
 .comment__rec {
   width: 40.93rem;
   height: 37.815rem;
-  float: right;
   z-index: 600;
   position: relative;
-  top: -28rem;
-  left: -10rem;
+  right: -77%;
+  top: 7rem;
 }
 
 .comment__rec_second {
@@ -551,7 +567,7 @@ body.noscroll {
 }
 
 .connection__phone {
-  margin-right: .5rem;
+  margin-right: 3rem;
 }
 
 .connection__phone::after {
@@ -561,6 +577,8 @@ body.noscroll {
   width: 0.2rem;
   display: block;
   background-color: #fff;
+  top: -3rem;
+  left: 34rem;
 }
 
 .map {
@@ -639,6 +657,11 @@ body.noscroll {
   top: -23rem;
   position: relative;
   margin-bottom: -20rem;
+}
+
+.footer__socials {
+  text-align: right;
+  margin-bottom: -2.5rem;
 }
 
 .footer__socials::after {
