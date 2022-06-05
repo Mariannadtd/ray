@@ -134,6 +134,30 @@ p {
   letter-spacing: .5rem;
 }
 
+@media (max-width: 1400px) {
+  .header {
+    background-image: url("../images/header/1400.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-image: url("../images/header/1200.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    background-image: url("../images/header/992.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
 .header__title {
   font-size: 9.6rem;
   margin: 0 3rem;
@@ -149,6 +173,7 @@ p {
 @media (max-width: 576px) {
   .header__title {
     font-size: 6rem;
+    margin: 0;
   }
 }
 
@@ -745,37 +770,35 @@ body.noscroll {
     </style>
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 d-flex justify-content-between align-items-center"><a class="header__btn upper" href="#">Забронировать лед</a>
-              <div class="hamburger">
-                <div class="hamburger__field" id="hamburger"> <span class="bar"> </span><span class="bar"></span></div>
-              </div>
-              <div class="header__number">8 495 602 02 32</div>
+    <header class="header">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between align-items-center"><a class="header__btn upper" href="#">Забронировать лед</a>
+            <div class="hamburger">
+              <div class="hamburger__field" id="hamburger"> <span class="bar"> </span><span class="bar"></span></div>
             </div>
-            <div class="col d-flex justify-content-center"><img class="logo" src="../images/header/logo.png" alt="logo"></div>
-            <div class="col-12">
-              <div class="wtf d-flex justify-content-center align-items-center flex-md-row flex-column upper"><span class="header__subtitle">новый</span>
-                <h1 class="header__title">ледовый комплекс</h1><span class="header__subtitle">в москве</span>
-              </div>
-            </div>
-            <div class="col d-flex justify-content-center"><span class="header__paragraph">Москва,<br>Волоколамское шоссе, д.88</span></div>
-            <div class="header__rec"> <img src="../images/header/rec.png" alt="rec"></div>
+            <div class="header__number">8 495 602 02 32</div>
           </div>
+          <div class="col d-flex justify-content-center"><img class="logo" src="../images/header/logo.png" alt="logo"></div>
+          <div class="col-12">
+            <div class="wtf d-flex justify-content-center align-items-center flex-md-row flex-column upper"><span class="header__subtitle">новый</span>
+              <h1 class="header__title">ледовый комплекс</h1><span class="header__subtitle">в москве</span>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center"><span class="header__paragraph">Москва,<br>Волоколамское шоссе, д.88</span></div>
+          <div class="header__rec"> <img src="../images/header/rec.png" alt="rec"></div>
         </div>
-        <div class="popup" id="popup">
-          <div class="menu" id="navbar-menu">
-            <li class="menu__item"> <a class="menu__link" href="#">мы</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">возможности </a>
-              <li class="menu__item"> </li><a class="menu__link" href="#">преимущества</a>
-              <li class="menu__item"> </li><a class="menu__link" href="#">галерея</a>
-              <li class="menu__item"> </li><a class="menu__link" href="#">события</a>
-              <li class="menu__item"> </li><a class="menu__link" href="#">отзывы</a>
-              <li class="menu__item"> </li><a class="menu__link" href="#">контакты </a>
-            </li>
-          </div>
+      </div>
+      <div class="popup" id="popup">
+        <div class="menu" id="navbar-menu">
+          <li class="menu__item"> <a class="menu__link" href="#">мы</a></li>
+          <li class="menu__item"> <a class="menu__link" href="#">возможности </a>
+            <li class="menu__item"> </li><a class="menu__link" href="#">преимущества</a>
+            <li class="menu__item"> </li><a class="menu__link" href="#">галерея</a>
+            <li class="menu__item"> </li><a class="menu__link" href="#">события</a>
+            <li class="menu__item"> </li><a class="menu__link" href="#">отзывы</a>
+            <li class="menu__item"> </li><a class="menu__link" href="#">контакты </a>
+          </li>
         </div>
       </div>
     </header>
