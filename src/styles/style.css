@@ -34,6 +34,12 @@ html {
   }
 }
 
+@media (max-width: 992px) {
+  html {
+    font-size: 6px;
+  }
+}
+
 body {
   font-family: 'Bebas Neue', sans-serif !important;
 }
@@ -129,6 +135,18 @@ p {
   letter-spacing: 1.7rem;
 }
 
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__title {
+    font-size: 6rem;
+  }
+}
+
 .header__paragraph {
   margin: 34rem 0 8.6rem;
   color: black;
@@ -218,6 +236,8 @@ body.noscroll {
 
 .logo {
   margin: 9rem 0 11.2rem;
+  max-width: 26.6rem;
+  max-height: 10.8rem;
 }
 
 .offer {
@@ -240,8 +260,8 @@ body.noscroll {
 }
 
 .description {
-  margin-top: 4.4rem;
-  margin-left: 4.4rem;
+  padding-top: 4.4rem;
+  padding-left: 4.4rem;
   text-transform: none;
   z-index: 20;
 }
@@ -352,6 +372,7 @@ body.noscroll {
   background-image: url("../images/book/book-rec.png");
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: contain;
   margin: -580px auto;
   z-index: 600;
   position: relative;
@@ -359,6 +380,12 @@ body.noscroll {
   padding-top: 5.7rem;
   width: 127.13rem;
   height: 27.18rem;
+}
+
+@media (max-width: 576px) {
+  .book {
+    background-size: cover;
+  }
 }
 
 .book-ice {
@@ -408,6 +435,11 @@ body.noscroll {
   border-left: .1rem solid #fff;
   border-right: .1rem solid #fff;
   padding-left: 2.1rem;
+}
+
+.benefits-list__img {
+  max-width: 14.7rem;
+  max-height: 14rem;
 }
 
 .gallery {

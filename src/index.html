@@ -39,6 +39,12 @@ html {
   }
 }
 
+@media (max-width: 992px) {
+  html {
+    font-size: 6px;
+  }
+}
+
 body {
   font-family: 'Bebas Neue', sans-serif !important;
 }
@@ -134,6 +140,18 @@ p {
   letter-spacing: 1.7rem;
 }
 
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__title {
+    font-size: 6rem;
+  }
+}
+
 .header__paragraph {
   margin: 34rem 0 8.6rem;
   color: black;
@@ -223,6 +241,8 @@ body.noscroll {
 
 .logo {
   margin: 9rem 0 11.2rem;
+  max-width: 26.6rem;
+  max-height: 10.8rem;
 }
 
 .offer {
@@ -245,8 +265,8 @@ body.noscroll {
 }
 
 .description {
-  margin-top: 4.4rem;
-  margin-left: 4.4rem;
+  padding-top: 4.4rem;
+  padding-left: 4.4rem;
   text-transform: none;
   z-index: 20;
 }
@@ -357,6 +377,7 @@ body.noscroll {
   background-image: url("../images/book/book-rec.png");
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: contain;
   margin: -580px auto;
   z-index: 600;
   position: relative;
@@ -364,6 +385,12 @@ body.noscroll {
   padding-top: 5.7rem;
   width: 127.13rem;
   height: 27.18rem;
+}
+
+@media (max-width: 576px) {
+  .book {
+    background-size: cover;
+  }
 }
 
 .book-ice {
@@ -413,6 +440,11 @@ body.noscroll {
   border-left: .1rem solid #fff;
   border-right: .1rem solid #fff;
   padding-left: 2.1rem;
+}
+
+.benefits-list__img {
+  max-width: 14.7rem;
+  max-height: 14rem;
 }
 
 .gallery {
@@ -723,11 +755,11 @@ body.noscroll {
               </div>
               <div class="header__number">8 495 602 02 32</div>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="logo"> <img src="../images/header/logo.png" alt="logo"></div>
-            </div>
-            <div class="col-12 d-flex justify-content-center"><span class="header__subtitle">новый</span>
-              <h1 class="header__title">ледовый комплекс</h1><span class="header__subtitle">в москве</span>
+            <div class="col d-flex justify-content-center"><img class="logo" src="../images/header/logo.png" alt="logo"></div>
+            <div class="col-12">
+              <div class="wtf d-flex justify-content-center align-items-center flex-md-row flex-column upper"><span class="header__subtitle">новый</span>
+                <h1 class="header__title">ледовый комплекс</h1><span class="header__subtitle">в москве</span>
+              </div>
             </div>
             <div class="col d-flex justify-content-center"><span class="header__paragraph">Москва,<br>Волоколамское шоссе, д.88</span></div>
             <div class="header__rec"> <img src="../images/header/rec.png" alt="rec"></div>
@@ -764,8 +796,8 @@ body.noscroll {
     </section>
     <section class="about"> 
       <div class="container">
-        <ul class="row about-list px-0">
-          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+        <ul class="row col-lg-11 offset-lg-1 col-md-12 about-list px-0">
+          <li class="col-lg-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
@@ -779,7 +811,7 @@ body.noscroll {
           <li class="col-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/ice-rink.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">зал</h3>
                   <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
@@ -787,10 +819,10 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+          <li class="col-lg-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/ice-rink.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">свет</h3>
                   <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
@@ -801,7 +833,7 @@ body.noscroll {
           <li class="col-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/sound.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">звук</h3>
                   <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
@@ -809,10 +841,10 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+          <li class="col-lg-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/sound.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/locker-room.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">раздевалки</h3>
                   <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
@@ -823,7 +855,7 @@ body.noscroll {
           <li class="col-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/locker-room.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">тренажерный зал</h3>
                   <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
@@ -831,10 +863,10 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-lg-5 offset-lg-1 about-list__item d-flex justify-content-start">
+          <li class="col-lg-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/spa.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">зона спа</h3>
                   <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
@@ -884,40 +916,44 @@ body.noscroll {
     </section>
     <section class="benefits"> 
       <div class="continer">
-        <div class="wrapper"> 
-          <h2 class="benefits__title">наши преимущества</h2>
-          <div class="benefits-list upper">
-            <div class="row g-0">
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">Высокий<br>потолок</h5><img class="benefits-list__img" src="../images/benefits/ceiling.png" alt="ceiling">
+        <div class="row">
+          <div class="col-lg-11 offset-lg-1 col-md-12">
+            <h2 class="benefits__title">наши преимущества</h2>
+          </div>
+          <div class="col-xl-10 offset-xl-1 col-lg-12">
+            <div class="benefits-list upper">
+              <div class="row g-0">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">Высокий<br>потолок</h5><img class="benefits-list__img" src="../images/benefits/ceiling.png" alt="ceiling">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">Доброжелательный<br>персонал</h5><img class="benefits-list__imging" src="../images/benefits/staff.png" alt="staff">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">Доброжелательный<br>персонал</h5><img class="benefits-list__img" src="../images/benefits/staff.png" alt="staff">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">Даем <br>допинвентарь</h5><img class="benefits-list__img" src="../images/benefits/implements.png" alt="implements">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">Даем <br>допинвентарь</h5><img class="benefits-list__img" src="../images/benefits/implements.png" alt="implements">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">
-                     Раздевалка<br>открывается за час</h5><img class="benefits-list__img" src="../images/benefits/hour.png" alt="hour">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">
+                       Раздевалка<br>открывается за час</h5><img class="benefits-list__img" src="../images/benefits/hour.png" alt="hour">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">
-                     Парковка<br>рядом</h5><img class="benefits-list__img" src="../images/benefits/parking.png" alt="parking">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">
+                       Парковка<br>рядом</h5><img class="benefits-list__img" src="../images/benefits/parking.png" alt="parking">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2">
-                <div class="benefits-list__item">
-                  <h5 class="benefits-list__title">Зона спа,<br>сауна</h5><img class="benefits-list__img" src="../images/benefits/sauna.png" alt="sauna">
+                <div class="col-md-2 col-sm-4 col-6 mt-4">
+                  <div class="benefits-list__item">
+                    <h5 class="benefits-list__title">Зона спа,<br>сауна</h5><img class="benefits-list__img" src="../images/benefits/sauna.png" alt="sauna">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1044,14 +1080,13 @@ body.noscroll {
     <footer class="footer"><img class="footer__rec" src="../images/footer/footer-rec.png" alt="rec">
       <div class="container footer-wrapper">
         <div class="row d-flex justify-content-between">
-          <div class="col-2 d-flex align-content-between flex-column justify-content-between"><span class="footer__date align-self-end">© 2022</span>
-            <div class="footer__socials align-self-end"><span>Мы в соцсетях:</span>
-              <div class="footer__links align-self-end"><a>VK </a><a>OK</a><a>Telegram</a></div>
+          <div class="col-md-3 col-sm-12 d-flex align-content-between flex-column justify-content-between"><span class="footer__date align-self-md-end align-self-sm-center">© 2022</span>
+            <div class="footer__socials align-self-md-end align-self-sm-center"><span>Мы в соцсетях:</span>
+              <div class="footer__links align-self-md-end align-self-sm-center"><a>VK </a><a>OK</a><a>Telegram</a></div>
             </div>
           </div>
-          <div class="col-8 footer-center"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
-          <div class="col-2 d-flex align-content-between flex-column justify-content-between"><span class="footer__rights">
-               Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres">Москва, <br>Волоколамское шоссе, д.88</span></div>
+          <div class="col-md-6 col-sm-12 footer-center"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
+          <div class="col-md-3 col-sm-12 d-flex align-content-between flex-column justify-content-between align-self-sm-center text-sm-center"><span class="footer__rights align-self-sm-center text-sm-center">Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres align-self-sm-center text-sm-center">Москва, <br>Волоколамское шоссе, д.88</span></div>
         </div>
       </div>
     </footer>

@@ -47,6 +47,9 @@ html {
   @media (max-width: $x-large) {
     font-size: 7px;
   }
+  @media (max-width: $large) {
+    font-size: 6px;
+  }
 }
 body {
   font-family: 'Bebas Neue', sans-serif !important;
@@ -127,6 +130,12 @@ p {
     font-size: 9.6rem;
     margin: 0 3rem;
     letter-spacing: 1.7rem;
+    @media (max-width: $medium) {
+      font-size: 7rem;
+    }
+    @media (max-width: $small) {
+      font-size: 6rem;
+    }
   }
   &__paragraph {
     margin: 34rem 0 8.6rem;
@@ -194,6 +203,8 @@ body {
 }
 .logo {
   margin: 9rem 0 11.2rem;
+  max-width: 26.6rem;
+  max-height: 10.8rem;
 }
 
 
@@ -219,8 +230,8 @@ body {
 
 // ABOUT
 .description {
-  margin-top: 4.4rem;
-  margin-left: 4.4rem;
+  padding-top: 4.4rem;
+  padding-left: 4.4rem;
   text-transform: none;
   z-index: 20;
   &__paragraph {
@@ -322,6 +333,7 @@ body {
   background-image: url('../images/book/book-rec.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: contain;
   margin: -580px auto;
   z-index: 600;
   position: relative;
@@ -329,6 +341,9 @@ body {
   padding-top: 5.7rem;
   width: 127.13rem;
   height: 27.18rem;
+  @media (max-width: $small) {
+    background-size: cover;
+  }
   &-ice {
     text-align: center;
     &__title {
@@ -371,6 +386,10 @@ body {
       border-left: .1rem solid #fff;
       border-right: .1rem solid #fff;
       padding-left: 2.1rem;
+    }
+    &__img {
+      max-width: 14.7rem;
+      max-height: 14rem;
     }
   }
 }

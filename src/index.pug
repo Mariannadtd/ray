@@ -26,8 +26,8 @@ html
 
     section.about 
       .container
-        ul.row.about-list.px-0
-          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+        ul.row.col-lg-11.offset-lg-1.col-md-12.about-list.px-0
+          li.col-lg-6.about-list__item.d-flex.justify-content-start
             .row
               .d-flex.justify-content-between
                 .col-5
@@ -39,15 +39,15 @@ html
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/ice.png").about-list__img
+                  img(src="../images/about/ice-rink.png").about-list__img
                 .col-7.description
                   h3.description__title зал
                   p.description__paragraph Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. 
-          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+          li.col-lg-6.about-list__item.d-flex.justify-content-start
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/ice-rink.png").about-list__img
+                  img(src="../images/about/light.png").about-list__img
                 .col-7.description
                   h3.description__title свет
                   p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
@@ -55,15 +55,15 @@ html
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/light.png").about-list__img
+                  img(src="../images/about/sound.png").about-list__img
                 .col-7.description
                   h3.description__title звук
                   p.description__paragraph Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. 
-          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+          li.col-lg-6.about-list__item.d-flex.justify-content-start
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/sound.png").about-list__img
+                  img(src="../images/about/locker-room.png").about-list__img
                 .col-7.description
                   h3.description__title раздевалки
                   p.description__paragraph Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.
@@ -71,15 +71,15 @@ html
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/locker-room.png").about-list__img
+                  img(src="../images/about/gum.png").about-list__img
                 .col-7.description
                   h3.description__title тренажерный зал
                   p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
-          li.col-lg-5.offset-lg-1.about-list__item.d-flex.justify-content-start
+          li.col-lg-6.about-list__item.d-flex.justify-content-start
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/gum.png").about-list__img
+                  img(src="../images/about/spa.png").about-list__img
                 .col-7.description
                   h3.description__title зона спа
                   p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
@@ -120,52 +120,54 @@ html
 
     section.benefits  
       .continer
-        .wrapper 
-          h2.benefits__title наши преимущества
-          .benefits-list.upper
-            .row.g-0
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title
-                    | Высокий
-                    br
-                    | потолок
-                  img(src="../images/benefits/ceiling.png", alt="ceiling").benefits-list__img
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title
-                    | Доброжелательный
-                    br 
-                    | персонал
-                  img(src="../images/benefits/staff.png", alt="staff").benefits-list__imging
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title
-                    | Даем 
-                    br 
-                    | допинвентарь
-                  img(src="../images/benefits/implements.png", alt="implements").benefits-list__img
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title 
-                    | Раздевалка
-                    br 
-                    | открывается за час
-                  img(src="../images/benefits/hour.png", alt="hour").benefits-list__img
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title 
-                    | Парковка
-                    br 
-                    | рядом
-                  img(src="../images/benefits/parking.png", alt="parking").benefits-list__img
-              .col-2
-                .benefits-list__item
-                  h5.benefits-list__title
-                    | Зона спа,
-                    br 
-                    | сауна
-                  img(src="../images/benefits/sauna.png", alt="sauna").benefits-list__img
+        .row
+          .col-lg-11.offset-lg-1.col-md-12
+            h2.benefits__title наши преимущества
+          .col-xl-10.offset-xl-1.col-lg-12
+            .benefits-list.upper
+              .row.g-0
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Высокий
+                      br
+                      | потолок
+                    img(src="../images/benefits/ceiling.png", alt="ceiling").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Доброжелательный
+                      br 
+                      | персонал
+                    img(src="../images/benefits/staff.png", alt="staff").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Даем 
+                      br 
+                      | допинвентарь
+                    img(src="../images/benefits/implements.png", alt="implements").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title 
+                      | Раздевалка
+                      br 
+                      | открывается за час
+                    img(src="../images/benefits/hour.png", alt="hour").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title 
+                      | Парковка
+                      br 
+                      | рядом
+                    img(src="../images/benefits/parking.png", alt="parking").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Зона спа,
+                      br 
+                      | сауна
+                    img(src="../images/benefits/sauna.png", alt="sauna").benefits-list__img
 
     section.gallery 
       .gallery__rec
