@@ -141,16 +141,6 @@ p {
     background-repeat: no-repeat;
     background-position-x: center;
   }
-  // max-height: 946.84rem;
-  // // max-width: 192rem;
-  // width: 100%;
-  // overflow-x: hidden;
-  //   width: auto;
-  //   height: 58.507rem;
-  // }
-  // @media (max-width: $small) {
-  //   height: auto;
-  // }
   &__title {
     font-size: 9.6rem;
     margin: 0 3rem;
@@ -171,6 +161,9 @@ p {
     letter-spacing: 0rem;
     text-transform: none;
     font-family: 'IBM Plex Sans';
+    @media (max-width: $medium) {
+      margin-top: 16rem;
+    }
   }
   &__rec  {
     z-index: -5;
@@ -178,9 +171,37 @@ p {
     left: -4rem;
     top: -38rem;
     padding-bottom: -38rem;
+    max-width: 59.619rem;
+    max-height: 62.41rem;
+    @media (max-width: $x-large) {
+      width: 50.67rem;
+      height: 53.048rem;
+    }
+    @media (max-width: $large) {
+      width: 43.069rem;
+      height: 45.09rem;
+    }
+    @media (max-width: $medium) {
+      width: 28.1rem;
+      height: 29.5rem;
+    }
+    @media (max-width: $small) {
+      width: 21.356rem;
+      height: 22.42rem;
+    }
+    @media (max-width: $extra-small) {
+      width: 12.8rem;
+      height: 13.4rem;
+    }
   }
   &__subtitle {
-    padding-top: 2.4rem;
+    margin-bottom: 5rem;
+    @media (max-width: $medium) {
+      margin: 2.5rem 0;
+    }
+  }
+  &__number {
+    float: right;
   }
 }
 .popup {
@@ -215,7 +236,8 @@ body {
   }
 }
 .hamburger {
-  display: flex;
+  display: inline;
+  text-align: center;
   &__field {
     padding: 1rem 0;
     cursor: pointer;
@@ -237,6 +259,12 @@ body {
 // OFFER
 .offer {
   margin-top: -45rem;
+  @media (max-width: $large) { 
+    margin-top: -37rem;
+  }
+  @media (max-width: $medium) { 
+    margin-top: -18rem;
+  }
   &__title {
     letter-spacing: .3rem;
     font-size: 4.8rem;
@@ -244,8 +272,15 @@ body {
     max-width: 57.6rem;
   }
   &-slider {
-    &__item {
-      min-width: 75rem;
+    &__img {
+      max-height: 50rem;
+      // width: 100%;
+      // height: 100%;
+      // // object-fit: cover;
+      @media (max-width: $x-large) {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &__btn {
