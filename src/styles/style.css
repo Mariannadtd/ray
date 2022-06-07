@@ -357,7 +357,7 @@ body.noscroll {
 
 .description {
   padding-top: 4.4rem;
-  padding-left: 4.4rem;
+  padding-left: 3rem;
   text-transform: none;
   z-index: 20;
 }
@@ -469,13 +469,13 @@ body.noscroll {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: contain;
-  margin: -580px auto;
+  margin: -58rem auto;
   z-index: 600;
   position: relative;
   z-index: 80;
   padding-top: 5.7rem;
-  width: 127.13rem;
-  height: 27.18rem;
+  max-width: 127.13rem;
+  max-height: 27.18rem;
 }
 
 @media (max-width: 576px) {
@@ -684,7 +684,8 @@ body.noscroll {
   color: #fff;
   z-index: 1200;
   position: relative;
-  margin: -46rem;
+  margin: -46rem auto;
+  height: 67.524rem !important;
 }
 
 .connection__arrow {

@@ -362,7 +362,7 @@ body.noscroll {
 
 .description {
   padding-top: 4.4rem;
-  padding-left: 4.4rem;
+  padding-left: 3rem;
   text-transform: none;
   z-index: 20;
 }
@@ -474,13 +474,13 @@ body.noscroll {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: contain;
-  margin: -580px auto;
+  margin: -58rem auto;
   z-index: 600;
   position: relative;
   z-index: 80;
   padding-top: 5.7rem;
-  width: 127.13rem;
-  height: 27.18rem;
+  max-width: 127.13rem;
+  max-height: 27.18rem;
 }
 
 @media (max-width: 576px) {
@@ -689,7 +689,8 @@ body.noscroll {
   color: #fff;
   z-index: 1200;
   position: relative;
-  margin: -46rem;
+  margin: -46rem auto;
+  height: 67.524rem !important;
 }
 
 .connection__arrow {
@@ -895,7 +896,7 @@ body.noscroll {
     <section class="about"> 
       <div class="container">
         <ul class="row col-lg-11 offset-lg-1 col-md-12 about-list px-0">
-          <li class="col-lg-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
@@ -906,7 +907,7 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/ice-rink.png"></div>
@@ -917,7 +918,7 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-lg-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
@@ -928,7 +929,7 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/sound.png"></div>
@@ -939,7 +940,7 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-lg-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/locker-room.png"></div>
@@ -950,24 +951,24 @@ body.noscroll {
               </div>
             </div>
           </li>
-          <li class="col-6 about-list__item d-flex justify-content-start">
-            <div class="row">
-              <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
-                <div class="col-7 description">
-                  <h3 class="description__title">тренажерный зал</h3>
-                  <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="col-lg-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
                 <div class="col-5"><img class="about-list__img" src="../images/about/spa.png"></div>
                 <div class="col-7 description">
                   <h3 class="description__title">зона спа</h3>
                   <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 about-list__item d-flex justify-content-start">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
+                <div class="col-7 description">
+                  <h3 class="description__title">тренажерный зал</h3>
+                  <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
                 </div>
               </div>
             </div>
@@ -980,10 +981,10 @@ body.noscroll {
       <div class="opportunities">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-5 offset-lg-1">
+            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
               <h2 class="opportunities__title">возможности</h2>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
               <div class="opportunities-list d-flex">
                 <div class="opportunities-list__item"> 
                   <h4 class="opportunities-list__title">заточка коньков</h4><img class="opportunities-list__img" src="../images/opportunities/skies.png" alt="">
@@ -1013,7 +1014,7 @@ body.noscroll {
       </div>
     </section>
     <section class="benefits"> 
-      <div class="continer">
+      <div class="container">
         <div class="row">
           <div class="col-lg-11 offset-lg-1 col-md-12">
             <h2 class="benefits__title">наши преимущества</h2>
@@ -1145,16 +1146,16 @@ body.noscroll {
     <section class="connection">
       <div class="container">
         <div class="row g-0">
-          <div class="col-5 offset-1">
+          <div class="col-md-5 offset-md-1 col-sm-12">
             <h2 class="connection__title">Контакты</h2>
           </div>
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <h4 class="connection__addres">Москва, Волоколамское шоссе, д. 88</h4>
             <div class="row g-0">
-              <div class="col-5">
+              <div class="col-md-5 col-sm-12">
                 <h4 class="connection__phone">Тел: 8 495 602 02 32</h4>
               </div>
-              <div class="col-7">
+              <div class="col-md-7 col-sm-12">
                 <h4 class="connection__mail">Почта: aolkluch@mail.ru</h4>
               </div>
             </div>
