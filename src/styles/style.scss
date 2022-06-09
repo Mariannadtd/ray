@@ -333,12 +333,13 @@ body {
   background-image: url('../images/opportunities/light-blue.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
   padding-top: 30rem;
   top: -25rem;
   position: relative;
   z-index: -10;
   margin-top: -43em;
-  height: 137.15rem !important;
+  max-height: 137.15rem !important;
   &-wrapper {
     max-width: 152.4rem !important;
     margin: 0 auto;
@@ -433,6 +434,8 @@ body {
   background-image: url('../images/benefits/benefits-rec.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+  max-height: 129rem;
   color: #fff;
   &__title {
     padding-bottom: 10.8rem;
@@ -462,6 +465,8 @@ body {
   background-image: url('../images/gallery/bg.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+  max-height: 130.71rem;
   top: 9rem;
   position: relative;
   &__img {
@@ -594,13 +599,13 @@ body {
   background-image: url('../images/connection/bg.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+  max-height: 67.524rem;
   padding-top: 32.674rem;
   padding-bottom: 25.466rem;
   color: #fff;
   z-index: 1200;
   position: relative;
-  // margin: -46rem;
-  // max-width: 100%;
   margin: -46rem auto;
   height: 67.524rem !important;
   &__arrow {
@@ -608,19 +613,36 @@ body {
     display: block;
     position: relative;
     top: 20rem;
+    max-width: 8.637rem !important;
   }
   &__phone {
-    margin-right: 3rem;
+    margin-right: 4rem;
+    @media (max-width: $large) {
+      margin: 4rem 0 -.7rem;
+    }
     &::after {
       content: '';
       position: relative;
-      height: 2.2rem;
-      width: 0.2rem;
+      height: 3rem;
+      width: 0.3rem;
       display: block;
       background-color: #fff;
-      top: -3rem;
-      left: 34rem;
+      top: -3.4rem;
+      left: 32.5rem;
+      @media (max-width: $large) {
+        rotate: 90deg;
+        top: 0.0rem;
+        left: 2.0rem;
+      }
     }
+  }
+  &__addres {
+    @media (max-width: $large) {
+      padding-top: 4.7rem;
+    }
+  }
+  &-contacts {
+    margin-top: 2rem;
   }
 }
 
@@ -629,14 +651,18 @@ body {
 
 // MAP
 .map {
-  margin-top: 19.6rem;
+  margin-top: 25rem;
   background-image: url('../images/map/map.png');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+  max-height: 52.457rem !important;
+  position: relative;
+  z-index: 1100;
   &__logo {
     margin: 0 auto;
     display: block;
-    padding: 22.652rem 0 24.605rem;
+    padding: 24rem 0 24.605rem;
   }
   &__rec {
     width: 42.02rem;
