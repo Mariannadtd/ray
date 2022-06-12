@@ -127,30 +127,8 @@ p {
   font-size: 3.2rem;
   padding-top: 1.7rem;
   letter-spacing: .5rem;
-}
-
-@media (max-width: 1400px) {
-  .header {
-    background-image: url("../images/header/1400.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-}
-
-@media (max-width: 1200px) {
-  .header {
-    background-image: url("../images/header/1200.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-}
-
-@media (max-width: 992px) {
-  .header {
-    background-image: url("../images/header/992.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
+  background-size: cover;
+  max-height: 94.684rem;
 }
 
 .header__title {
@@ -189,47 +167,28 @@ p {
 }
 
 .header__rec {
+  background-image: url("../images/header/rec.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 62.41rem;
+  max-width: 59.619rem !important;
+  display: block;
   z-index: -5;
   position: relative;
-  left: -4rem;
   top: -38rem;
-  padding-bottom: -38rem;
-  max-width: 59.619rem;
-  max-height: 62.41rem;
-}
-
-@media (max-width: 1200px) {
-  .header__rec {
-    width: 50.67rem;
-    height: 53.048rem;
-  }
+  left: -19rem;
 }
 
 @media (max-width: 992px) {
   .header__rec {
-    width: 43.069rem;
-    height: 45.09rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__rec {
-    width: 28.1rem;
-    height: 29.5rem;
+    top: -46rem;
+    left: -25rem;
   }
 }
 
 @media (max-width: 576px) {
   .header__rec {
-    width: 21.356rem;
-    height: 22.42rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .header__rec {
-    width: 12.8rem;
-    height: 13.4rem;
+    top: -50rem;
   }
 }
 
@@ -318,19 +277,7 @@ body.noscroll {
 }
 
 .offer {
-  margin-top: -45rem;
-}
-
-@media (max-width: 992px) {
-  .offer {
-    margin-top: -37rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .offer {
-    margin-top: -18rem;
-  }
+  margin-top: 16.8rem;
 }
 
 .offer__title {
@@ -353,6 +300,12 @@ body.noscroll {
 
 .offer__btn {
   background-color: #E0013F;
+}
+
+@media (max-width: 768px) {
+  .offer__btn {
+    margin-bottom: 6rem;
+  }
 }
 
 .description {
@@ -447,7 +400,10 @@ body.noscroll {
 }
 
 .opportunities__rec_first {
-  width: 52.52rem !important;
+  background-image: url("../images/opportunities/rec-first.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 52.52rem !important;
   height: 42.185rem !important;
   display: block;
   position: relative;
@@ -457,12 +413,24 @@ body.noscroll {
 }
 
 .opportunities__rec_second {
+  background-image: url("../images/opportunities/rec-second.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 30;
   position: relative;
+  display: block;
   left: 0rem;
   top: -32.5rem;
-  width: 74.65rem;
-  height: 68.96rem;
+}
+
+.opportunities__subtitle {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .opportunities__subtitle {
+    margin: 2.5rem 0;
+  }
 }
 
 .book {
@@ -695,12 +663,16 @@ body.noscroll {
   height: 67.524rem !important;
 }
 
-.connection__arrow {
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  top: 20rem;
-  max-width: 8.637rem !important;
+@media (max-width: 992px) {
+  .connection {
+    padding-top: 24.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .connection {
+    padding-top: 21rem;
+  }
 }
 
 .connection__phone {
@@ -732,6 +704,10 @@ body.noscroll {
   }
 }
 
+.connection__addres {
+  padding-top: 2.5rem;
+}
+
 @media (max-width: 992px) {
   .connection__addres {
     padding-top: 4.7rem;
@@ -757,6 +733,7 @@ body.noscroll {
   margin: 0 auto;
   display: block;
   padding: 24rem 0 24.605rem;
+  max-width: 12.8rem;
 }
 
 .map__rec {
@@ -767,8 +744,16 @@ body.noscroll {
   left: -10rem;
 }
 
+.map__arrow {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 43rem;
+  max-width: 8.637rem !important;
+  z-index: 1300 !important;
+}
+
 .ask {
-  margin-top: -45rem;
   background-color: #F1F7FF;
   padding: 15.284rem;
   text-align: center;
@@ -804,6 +789,7 @@ body.noscroll {
   display: block;
   padding: 6rem 0 8rem;
   margin: 0 auto;
+  max-width: 29rem;
 }
 
 .footer__privacy {

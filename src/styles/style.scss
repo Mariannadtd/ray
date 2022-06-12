@@ -126,21 +126,8 @@ p {
   font-size: 3.2rem;
   padding-top: 1.7rem;
   letter-spacing: .5rem;
-  @media (max-width: $xx-large) {
-    background-image: url('../images/header/1400.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-  @media (max-width: $x-large) {
-    background-image: url('../images/header/1200.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-  @media (max-width: $large) {
-    background-image: url('../images/header/992.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
+  background-size: cover;
+  max-height: 94.684rem;
   &__title {
     font-size: 9.6rem;
     margin: 0 3rem;
@@ -166,32 +153,22 @@ p {
     }
   }
   &__rec  {
+    background-image: url("../images/header/rec.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62.41rem;
+    max-width: 59.619rem !important;
+    display: block;
     z-index: -5;
     position: relative;
-    left: -4rem;
     top: -38rem;
-    padding-bottom: -38rem;
-    max-width: 59.619rem;
-    max-height: 62.41rem;
-    @media (max-width: $x-large) {
-      width: 50.67rem;
-      height: 53.048rem;
-    }
+    left: -19rem;
     @media (max-width: $large) {
-      width: 43.069rem;
-      height: 45.09rem;
-    }
-    @media (max-width: $medium) {
-      width: 28.1rem;
-      height: 29.5rem;
+      top: -46rem;
+      left: -25rem;
     }
     @media (max-width: $small) {
-      width: 21.356rem;
-      height: 22.42rem;
-    }
-    @media (max-width: $extra-small) {
-      width: 12.8rem;
-      height: 13.4rem;
+      top: -50rem;
     }
   }
   &__subtitle {
@@ -258,13 +235,7 @@ body {
 
 // OFFER
 .offer {
-  margin-top: -45rem;
-  @media (max-width: $large) { 
-    margin-top: -37rem;
-  }
-  @media (max-width: $medium) { 
-    margin-top: -18rem;
-  }
+  margin-top: 16.8rem;
   &__title {
     letter-spacing: .3rem;
     font-size: 4.8rem;
@@ -285,6 +256,9 @@ body {
   }
   &__btn {
     background-color: $red;
+    @media (max-width: $medium) {
+      margin-bottom: 6rem;
+    }
   }
 }
 
@@ -369,7 +343,10 @@ body {
   }
   &__rec {
     &_first { 
-      width: 52.52rem !important;
+      background-image: url('../images/opportunities/rec-first.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 52.52rem !important;
       height: 42.185rem !important;
       display: block;
       position: relative;
@@ -378,12 +355,22 @@ body {
       z-index: -14440;
     }
     &_second {
+      background-image: url('../images/opportunities/rec-second.png');
+      background-repeat: no-repeat;
+      background-size: cover;
       z-index: 30;
       position: relative;
+      display: block;
       left: 0rem;
       top: -32.5rem;
-      width: 74.65rem;
-      height: 68.96rem;
+      // max-width: 74.65rem;
+      // height: 68.96rem !important;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 5rem;
+    @media (max-width: $medium) {
+      margin: 2.5rem 0;
     }
   } 
 }
@@ -608,12 +595,11 @@ body {
   position: relative;
   margin: -46rem auto;
   height: 67.524rem !important;
-  &__arrow {
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: 20rem;
-    max-width: 8.637rem !important;
+  @media (max-width: $large) {
+    padding-top: 24.7rem;
+  }
+  @media (max-width: $small) {
+    padding-top: 21rem;
   }
   &__phone {
     margin-right: 4rem;
@@ -637,6 +623,7 @@ body {
     }
   }
   &__addres {
+      padding-top: 2.5rem;
     @media (max-width: $large) {
       padding-top: 4.7rem;
     }
@@ -663,6 +650,7 @@ body {
     margin: 0 auto;
     display: block;
     padding: 24rem 0 24.605rem;
+    max-width: 12.8rem;
   }
   &__rec {
     width: 42.02rem;
@@ -671,6 +659,14 @@ body {
     top: -26rem;
     left: -10rem;
   }
+  &__arrow {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 43rem;
+    max-width: 8.637rem !important;
+    z-index: 1300 !important;
+  }
 }
 
 
@@ -678,7 +674,6 @@ body {
 
 // ASK
 .ask {
-  margin-top: -45rem;
   background-color: #F1F7FF;
   padding: 15.284rem;
   text-align: center;
@@ -713,6 +708,7 @@ body {
     display: block;
     padding: 6rem 0 8rem;
     margin: 0 auto;
+    max-width: 29rem;
   }
   &__privacy {
     text-align: center;
@@ -729,11 +725,6 @@ body {
     position: relative;
     margin-bottom: -20rem;
   }
-
-
-
-
-
   &__socials {
     text-align: right;
     margin-bottom: -2.5rem;
