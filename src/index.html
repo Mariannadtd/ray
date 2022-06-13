@@ -314,7 +314,7 @@ body.noscroll {
 }
 
 .description {
-  padding-top: 4.4rem;
+  padding-top: 8.4rem;
   padding-left: 3rem;
   text-transform: none;
   z-index: 20;
@@ -364,6 +364,14 @@ body.noscroll {
   z-index: -10;
   margin-top: -43em;
   max-height: 137.15rem !important;
+  padding-bottom: 45rem;
+  margin-bottom: -100rem !important;
+}
+
+@media (max-width: 768px) {
+  .opportunities {
+    padding-bottom: 135rem;
+  }
 }
 
 .opportunities-wrapper {
@@ -374,6 +382,13 @@ body.noscroll {
 .opportunities-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 70rem;
+}
+
+@media (max-width: 768px) {
+  .opportunities-list {
+    padding-top: 4rem;
+  }
 }
 
 .opportunities-list__item {
@@ -402,6 +417,7 @@ body.noscroll {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-left: 10rem;
+  height: 12rem;
 }
 
 .opportunities__rec_first {
@@ -418,14 +434,12 @@ body.noscroll {
 }
 
 .opportunities__rec_second {
-  background-image: url("../images/opportunities/rec-second.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 30;
+  left: -12rem;
+  top: -14.5rem;
+  width: 100%;
+  max-width: 74.647rem;
+  height: auto;
   position: relative;
-  display: block;
-  left: 0rem;
-  top: -32.5rem;
 }
 
 .opportunities__subtitle {
@@ -443,7 +457,7 @@ body.noscroll {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: contain;
-  margin: -58rem auto;
+  margin: -48rem auto;
   z-index: 600;
   position: relative;
   z-index: 80;
@@ -479,7 +493,7 @@ body.noscroll {
 }
 
 .benefits {
-  top: 28.7rem;
+  top: 17.7rem;
   z-index: 60;
   position: relative;
   background-image: url("../images/benefits/benefits-rec.png");
@@ -490,9 +504,29 @@ body.noscroll {
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .benefits {
+    min-height: 155rem !important;
+  }
+}
+
 .benefits__title {
   padding-bottom: 10.8rem;
   padding-top: 49.8rem;
+}
+
+@media (max-width: 768px) {
+  .benefits__title {
+    padding-bottom: 7.8rem;
+    padding-top: 47.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits__title {
+    padding-bottom: 6.8rem;
+    padding-top: 43.8rem;
+  }
 }
 
 .benefits-list {
@@ -550,6 +584,24 @@ body.noscroll {
   margin-top: -40rem;
 }
 
+@media (max-width: 1400px) {
+  .gallery-block {
+    margin-top: -49rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gallery-block {
+    margin-top: -65rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-block {
+    margin-top: -78rem;
+  }
+}
+
 .events__title {
   letter-spacing: normal;
   margin-bottom: 10rem;
@@ -574,6 +626,12 @@ body.noscroll {
   border-top: 0.2rem solid #0069E4;
   border-bottom: 0.2rem solid #0069E4;
   padding: 5.1rem 0 5.1rem 0;
+}
+
+@media (max-width: 576px) {
+  .events-slider__slide {
+    margin-top: 1rem;
+  }
 }
 
 .events-slider__slide_left {
@@ -651,6 +709,12 @@ body.noscroll {
   z-index: 1000;
   width: 72.585rem;
   height: 63.902rem;
+}
+
+@media (max-width: 768px) {
+  .comment__title {
+    margin-bottom: 6rem;
+  }
 }
 
 .connection {
@@ -864,7 +928,7 @@ body.noscroll {
     </style>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container"> 
         <div class="row">
           <div class="col-4"><a class="header__btn upper" href="#">Бронь льда</a></div>
@@ -901,7 +965,7 @@ body.noscroll {
         </div>
       </div>
     </header>
-    <section class="offer"> 
+    <section class="offer" id="offer"> 
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 offset-lg-1 col-md-6 col-12">
@@ -916,7 +980,7 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="about"> 
+    <section class="about" id="about"> 
       <div class="container">
         <ul class="row col-lg-11 offset-lg-1 col-md-12 about-list px-0">
           <li class="col-md-6 about-list__item d-flex justify-content-start">
@@ -944,10 +1008,10 @@ body.noscroll {
           <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
                 <div class="col-7 description">
-                  <h3 class="description__title">свет</h3>
-                  <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
+                  <h3 class="description__title">тренажерный зал</h3>
+                  <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
                 </div>
               </div>
             </div>
@@ -988,10 +1052,10 @@ body.noscroll {
           <li class="col-md-6 about-list__item d-flex justify-content-start">
             <div class="row">
               <div class="d-flex justify-content-between">
-                <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
+                <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
                 <div class="col-7 description">
-                  <h3 class="description__title">тренажерный зал</h3>
-                  <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
+                  <h3 class="description__title">свет</h3>
+                  <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
                 </div>
               </div>
             </div>
@@ -999,11 +1063,11 @@ body.noscroll {
         </ul>
       </div>
     </section>
-    <section>
+    <section id="opportunities">
       <div class="opportunities__rec_first"></div>
       <div class="opportunities">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row">
             <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
               <h2 class="opportunities__title">возможности</h2>
             </div>
@@ -1025,10 +1089,9 @@ body.noscroll {
             </div>
           </div>
         </div>
-      </div>
-      <div class="opportunities__rec_second"></div>
+      </div><img class="opportunities__rec_second" src="../images/opportunities/rec-second.png" alt="">
     </section>
-    <section class="book"> 
+    <section class="book" id="book"> 
       <div class="container">
         <div class="book-ice"> 
           <h2 class="book-ice__title">забронируйте лед</h2>
@@ -1036,7 +1099,7 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="benefits"> 
+    <section class="benefits" id="benefits"> 
       <div class="container">
         <div class="row">
           <div class="col-lg-11 offset-lg-1 col-md-12">
@@ -1083,7 +1146,7 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="gallery"> 
+    <section class="gallery" id="gallery"> 
       <div class="gallery__rec"><img src="../images/gallery/gallery-rec.png" alt="gallery-rectangle"></div>
       <div class="container"> 
         <div class="gallery-block">
@@ -1103,16 +1166,16 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="events"> 
+    <section class="events" id="events"> 
       <div class="container">
         <div class="row"> 
           <div class="col-lg-11 offset-lg-1">
             <h2 class="events__title">события  </h2>
           </div>
-          <div class="col-12">
+          <div class="col-lg-10 offset-lg-1">
             <div class="events-slider">
-              <div class="row">
-                <div class="col-lg-5 offset-lg-1">
+              <div class="row"> 
+                <div class="col-md-6 col">
                   <div class="events-slider__slide d-flex justify-content-start">
                     <div class="events-slider__slide_left">
                       <h2 class="events-slider__date">12–14</h2>
@@ -1123,8 +1186,8 @@ body.noscroll {
                     </div>
                   </div>
                 </div>
-                <div class="col-5">
-                  <div class="events-slider__slide d-flex justify-content-start g-0">
+                <div class="col-md-6 col">
+                  <div class="events-slider__slide d-flex justify-content-start">
                     <div class="events-slider__slide_left">
                       <h2 class="events-slider__date">20–24</h2>
                       <h4 class="events-slider__month">февраля</h4>
@@ -1140,14 +1203,14 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <section class="comment">
+    <section class="comment" id="comment">
       <div class="comment__rec"><img src="../images/comment/comment-rec.png" alt="rectangle"></div>
       <div class="container"> 
         <div class="row d-flex overflow-visible">
-          <div class="col-5 offset-lg-1">
+          <div class="col-lg-5 offset-lg-1 col-md-6 col">
             <h2 class="comment__title">Отзывы</h2>
           </div>
-          <div class="col-6 overflow-visible">
+          <div class="col-md-6 col overflow-visible">
             <div class="comment-slider d-flex justify-content-start">
               <div class="comment-slider__item">
                 <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
@@ -1166,9 +1229,9 @@ body.noscroll {
         </div>
       </div><img class="comment__rec_second" src="../images/comment/comment-rec2.png" alt="rectangle">
     </section>
-    <section class="connection">
+    <section class="connection" id="connection">
       <div class="row g-0 d-sm-flex d-block align-items-center">
-        <div class="col-sm-5 offset-sm-1 col-12">
+        <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-6 col-12">
           <h2 class="connection__title">Контакты</h2>
         </div>
         <div class="col-sm-6 col-12">
@@ -1180,12 +1243,12 @@ body.noscroll {
         </div>
       </div>
     </section><img class="map__arrow" src="../images/map/arrow.png" alt="arrow">
-    <section class="map"> 
+    <section class="map" id="map"> 
       <div class="container"> 
         <div class="map-block"><img class="map__logo" src="../images/map/logo.png" alt="logo"></div>
       </div><img class="map__rec" src="../images/map/map-rec.png" alt="rectangle">
     </section>
-    <section class="ask"> 
+    <section class="ask" id="ask"> 
       <div class="container">
         <div class="ask-wrap upper">
           <h5 class="ask__title">Остались вопросы?</h5>
@@ -1193,7 +1256,7 @@ body.noscroll {
         </div>
       </div>
     </section>
-    <footer class="footer"><img class="footer__rec" src="../images/footer/footer-rec.png" alt="rec">
+    <footer class="footer" id="footer"><img class="footer__rec" src="../images/footer/footer-rec.png" alt="rec">
       <div class="container footer-wrapper">
         <div class="row d-flex justify-content-between">
           <div class="col-md-3 col-sm-4 col-12 d-sm-flex align-content-sm-between flex-sm-column justify-content-sm-between d-inline-block text-center"><span class="footer__date align-self-md-end align-self-sm-center">© 2022</span>

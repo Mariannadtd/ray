@@ -11,7 +11,7 @@ html
   body
     include modules/header
 
-    section.offer 
+    section#offer.offer 
       .container
         .row.align-items-center
           .col-lg-5.offset-lg-1.col-md-6.col-12
@@ -24,7 +24,7 @@ html
               //- li.offer-slider__item
               //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
 
-    section.about 
+    section#about.about 
       .container
         ul.row.col-lg-11.offset-lg-1.col-md-12.about-list.px-0
           li.col-md-6.about-list__item.d-flex.justify-content-start
@@ -47,10 +47,10 @@ html
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/light.png").about-list__img
+                  img(src="../images/about/gum.png").about-list__img
                 .col-7.description
-                  h3.description__title свет
-                  p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
+                  h3.description__title тренажерный зал
+                  p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
           li.col-md-6.about-list__item.d-flex.justify-content-start
             .row
               .d-flex.justify-content-between
@@ -79,17 +79,17 @@ html
             .row
               .d-flex.justify-content-between
                 .col-5
-                  img(src="../images/about/gum.png").about-list__img
+                  img(src="../images/about/light.png").about-list__img
                 .col-7.description
-                  h3.description__title тренажерный зал
-                  p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
+                  h3.description__title свет
+                  p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
+          
 
-
-    section
+    section#opportunities
       .opportunities__rec_first
       .opportunities
         .container
-          .row.align-items-center
+          .row
             .col-lg-5.offset-lg-1.col-md-6.col-sm-12
               h2.opportunities__title возможности
             .col-md-6.col-sm-12
@@ -106,16 +106,16 @@ html
                 .opportunities-list__item 
                   h4.opportunities-list__title проведение мероприятий
                   img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
-      .opportunities__rec_second
+      img(src="../images/opportunities/rec-second.png", alt="").opportunities__rec_second
 
-    section.book 
+    section#book.book 
       .container
         .book-ice  
           h2.book-ice__title забронируйте лед
           p.book-ice__paragraph прямо сейчас
           a.book-ice__btn.btn оставить заявку
 
-    section.benefits  
+    section#benefits.benefits  
       .container
         .row
           .col-lg-11.offset-lg-1.col-md-12
@@ -166,7 +166,7 @@ html
                       | сауна
                     img(src="../images/benefits/sauna.png", alt="sauna").benefits-list__img
 
-    section.gallery 
+    section#gallery.gallery 
       .gallery__rec
         img(src="../images/gallery/gallery-rec.png", alt="gallery-rectangle")
       .container  
@@ -184,37 +184,37 @@ html
                   img(src="../images/gallery/gallery-third.png", alt="third").gallery__img_first
                   img(src="../images/gallery/gallery-fourth.png", alt="fourth").allery__img_second
               
-    section.events 
+    section#events.events 
       .container
         .row 
           .col-lg-11.offset-lg-1
             h2.events__title события  
-          .col-12
+          .col-lg-10.offset-lg-1
             .events-slider
-              .row
-                .col-lg-5.offset-lg-1
+              .row 
+                .col-md-6.col
                   .events-slider__slide.d-flex.justify-content-start
                     .events-slider__slide_left
                       h2.events-slider__date 12–14
                       h4.events-slider__month апрель
                     .events-slider__slide_right
                       p.events-slider__text День открытых дверей
-                .col-5
-                  .events-slider__slide.d-flex.justify-content-start.g-0
+                .col-md-6.col
+                  .events-slider__slide.d-flex.justify-content-start
                     .events-slider__slide_left
                       h2.events-slider__date 20–24
                       h4.events-slider__month февраля
                     .events-slider__slide_right
                       p.events-slider__text Открытая тренировка
 
-    section.comment
+    section#comment.comment
       .comment__rec
         img(src="../images/comment/comment-rec.png", alt="rectangle")
       .container 
         .row.d-flex.overflow-visible
-          .col-5.offset-lg-1
+          .col-lg-5.offset-lg-1.col-md-6.col
             h2.comment__title Отзывы
-          .col-6.overflow-visible
+          .col-md-6.col.overflow-visible
             .comment-slider.d-flex.justify-content-start
               .comment-slider__item
                 .comment-slider__item_top.d-flex.justify-content-between
@@ -228,9 +228,9 @@ html
                 p.comment-slider__text Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. 
       img(src="../images/comment/comment-rec2.png", alt="rectangle").comment__rec_second
 
-    section.connection
+    section#connection.connection
       .row.g-0.d-sm-flex.d-block.align-items-center
-        .col-sm-5.offset-sm-1.col-12
+        .col-lg-5.offset-lg-1.col-md-6.col-sm-6.col-12
           h2.connection__title Контакты
         .col-sm-6.col-12
           h4.connection__addres Москва, Волоколамское шоссе, д. 88
@@ -239,13 +239,13 @@ html
             h4.connection__mail Почта: alkluc@mail.ru
     img(src="../images/map/arrow.png", alt="arrow").map__arrow
 
-    section.map 
+    section#map.map 
       .container 
         .map-block
           img(src="../images/map/logo.png", alt="logo").map__logo
       img(src="../images/map/map-rec.png", alt="rectangle").map__rec
 
-    section.ask 
+    section#ask.ask 
       .container
         .ask-wrap.upper
           h5.ask__title Остались вопросы?
