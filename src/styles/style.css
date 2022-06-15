@@ -416,12 +416,9 @@ body.noscroll {
 }
 
 .opportunities__rec_first {
-  background-image: url("../images/opportunities/rec-first.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   max-width: 52.52rem !important;
-  height: 42.185rem !important;
-  display: block;
+  width: 100%;
+  height: auto;
   position: relative;
   top: -21rem;
   left: 125rem;
@@ -549,7 +546,7 @@ body.noscroll {
   background-position-x: center;
   background-size: cover;
   max-height: 130.71rem;
-  top: 9rem;
+  top: -2rem;
   position: relative;
 }
 
@@ -571,7 +568,11 @@ body.noscroll {
   position: relative;
   right: -157rem;
   top: -12rem;
+  right: -160rem;
   z-index: -10;
+  height: auto;
+  width: 100%;
+  max-width: 67.229rem;
 }
 
 .gallery-block {
@@ -690,8 +691,9 @@ body.noscroll {
 }
 
 .comment__rec {
-  width: 40.93rem;
-  height: 37.815rem;
+  max-width: 40.93rem;
+  height: auto;
+  width: 100%;
   z-index: 600;
   position: relative;
   right: -77%;
@@ -702,8 +704,9 @@ body.noscroll {
   position: relative;
   top: -22rem;
   z-index: 1000;
-  width: 72.585rem;
-  height: 63.902rem;
+  max-width: 72.585rem;
+  height: auto;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -801,8 +804,9 @@ body.noscroll {
 }
 
 .map__rec {
-  width: 42.02rem;
-  height: 44.513rem;
+  max-width: 42.02rem;
+  height: auto;
+  width: 100%;
   position: relative;
   top: -26rem;
   left: -10rem;
@@ -844,7 +848,7 @@ body.noscroll {
   color: #fff;
   font-size: 2rem;
   line-height: 2.8rem;
-  padding-bottom: 4rem;
+  padding: 24rem 0 1rem;
   position: relative;
   z-index: 10;
 }
@@ -862,6 +866,9 @@ body.noscroll {
 }
 
 .footer__rec {
+  height: auto;
+  width: 100%;
+  max-width: 33.543rem;
   position: relative;
   top: -27rem;
   left: 85%;
