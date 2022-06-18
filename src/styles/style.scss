@@ -54,6 +54,11 @@ html {
 body {
   font-family: 'Bebas Neue', sans-serif !important;
 }
+section, footer, header {
+  @media (max-width: $large) {
+    padding: 0 1.5rem;
+  }
+}
 .container {
   max-width: 185rem !important;
   margin: 0 auto;
@@ -317,7 +322,7 @@ body {
   padding-bottom: 45rem;
   margin-bottom: -100rem !important;
   @media( max-width: $medium ) {
-    padding-bottom: 135rem;
+    padding-bottom: 184rem;
   }
   &-wrapper {
     max-width: 152.4rem !important;
@@ -368,6 +373,11 @@ body {
       max-width: 74.647rem;
       height: auto;
       position: relative;
+      @media (max-width: $medium) {
+        left: -20rem;
+        top: -35.5rem;
+        max-width: 29.6rem;
+      }
     }
   }
   &__subtitle {
@@ -467,9 +477,18 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  max-height: 130.71rem;
+  max-height: 126.7rem;
   top: -2rem;
   position: relative;
+  @media (max-width: $xx-large) {
+    padding-top: 8rem;
+  }
+  @media (max-width: $x-large) {
+    padding-top: 23rem;
+  }
+  @media (max-width: $large) {
+    padding-top: 37rem;
+  }
   &__img {
     max-height: 43rem;
     overflow: hidden;
@@ -484,12 +503,18 @@ body {
   &__rec {
     position: relative;
     right: -157rem;
-    top: -12rem;
-    right: -160rem;
+    right: -84%;
+    top: -15rem;
     z-index: -10;
     height: auto;
     width: 100%;
     max-width: 67.229rem;
+    @media (max-width: $x-large) {
+      top: -36rem;
+    }
+    @media (max-width: $large) {
+      top: -47rem;
+    }
   }
   &-block {
     padding-bottom: 50rem;
@@ -510,6 +535,8 @@ body {
 
 // EVENTS
 .events {
+  position: relative;
+  top: -15rem;
   &__title {
     letter-spacing: normal;
     margin-bottom: 10rem;
@@ -569,6 +596,15 @@ body {
   background-position-x: center;
   padding-top: 6rem;
   z-index: 500;
+  margin-top: -12rem;
+  @media (max-width: $large) {
+    height: 135rem;
+  }
+  @media (max-width: $small) {
+    height: 145rem;
+    padding-top: 0rem;
+    margin-top: -26rem;
+  }
   &-slider {
     max-width: 100%;
     overflow-x: hidden;
@@ -599,6 +635,10 @@ body {
     position: relative;
     right: -77%;
     top: 7rem;
+    @media (max-width: $small) {
+      right: -82%;
+      top: 10rem;
+    }
     &_second {
       position: relative;
       top: -22rem;
@@ -606,6 +646,17 @@ body {
       max-width: 72.585rem;
       height: auto;
       width: 100%;
+      @media (max-width: $xxx-large) {
+        width: 60rem;
+      }
+      @media (max-width: $large) {
+        width: 50rem;
+        left: -3%;
+        top: -13rem;
+      }
+      @media (max-width: $small) {
+        display: none;
+      }
     }
   }
   &__title {
@@ -675,7 +726,7 @@ body {
 
 // MAP
 .map {
-  margin-top: 25rem;
+  margin-top: 23rem;
   background-image: url('../images/map/map.png');
   background-repeat: no-repeat;
   background-position-x: center;
@@ -696,6 +747,9 @@ body {
     position: relative;
     top: -26rem;
     left: -10rem;
+    @media (max-width: $small) {
+      left: -24rem;
+    }
   }
   &__arrow {
     margin: 0 auto;
@@ -713,8 +767,10 @@ body {
 // ASK
 .ask {
   background-color: #F1F7FF;
-  padding: 15.284rem;
+  padding: 15.284rem 0;
   text-align: center;
+  max-height: 60rem;
+
   &__title {
     font-size: 5.6rem;
     letter-spacing: .8rem;
@@ -726,6 +782,18 @@ body {
     position: relative;
     z-index: 15;
   }
+  &__rec {
+    height: auto;
+    width: 100%;
+    max-width: 33.543rem;
+    position: relative;
+    z-index: 5;
+    top: -29.5rem;
+    left: 46%;
+    @media (max-width: $small) {
+      display: none;
+    }
+  }
 }
 
 
@@ -733,15 +801,18 @@ body {
 
 // FOOTER
 .footer {
-  margin-top: -18.6rem;
+  margin-top: -23.5rem;
   font-family: 'IBM Plex Sans';
   background-color: $red;
   color: #fff;
   font-size: 2rem;
   line-height: 2.8rem;
-  padding: 24rem 0 1rem;
+  padding: 30rem 0 1.5rem;
   position: relative;
   z-index: 10;
+  @media (max-width: $small) {
+    margin-top: -18rem !important;
+  }
   &__logo {
     display: block;
     padding: 6rem 0 8rem;
@@ -751,15 +822,6 @@ body {
   &__privacy {
     text-align: center;
     display: block;
-  }
-  &__rec {
-    height: auto;
-    width: 100%;
-    max-width: 33.543rem;
-    position: relative;
-    top: -27rem;
-    left: 85%;
-    z-index: 5;
   }
   &-wrapper {
     top: -23rem;

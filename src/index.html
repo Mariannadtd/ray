@@ -49,6 +49,12 @@ body {
   font-family: 'Bebas Neue', sans-serif !important;
 }
 
+@media (max-width: 992px) {
+  section, footer, header {
+    padding: 0 1.5rem;
+  }
+}
+
 .container {
   max-width: 185rem !important;
   margin: 0 auto;
@@ -370,7 +376,7 @@ body.noscroll {
 
 @media (max-width: 768px) {
   .opportunities {
-    padding-bottom: 135rem;
+    padding-bottom: 184rem;
   }
 }
 
@@ -437,6 +443,14 @@ body.noscroll {
   max-width: 74.647rem;
   height: auto;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .opportunities__rec_second {
+    left: -20rem;
+    top: -35.5rem;
+    max-width: 29.6rem;
+  }
 }
 
 .opportunities__subtitle {
@@ -550,9 +564,27 @@ body.noscroll {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  max-height: 130.71rem;
+  max-height: 126.7rem;
   top: -2rem;
   position: relative;
+}
+
+@media (max-width: 1400px) {
+  .gallery {
+    padding-top: 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    padding-top: 23rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    padding-top: 37rem;
+  }
 }
 
 .gallery__img {
@@ -572,12 +604,24 @@ body.noscroll {
 .gallery__rec {
   position: relative;
   right: -157rem;
-  top: -12rem;
-  right: -160rem;
+  right: -84%;
+  top: -15rem;
   z-index: -10;
   height: auto;
   width: 100%;
   max-width: 67.229rem;
+}
+
+@media (max-width: 1200px) {
+  .gallery__rec {
+    top: -36rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery__rec {
+    top: -47rem;
+  }
 }
 
 .gallery-block {
@@ -601,6 +645,11 @@ body.noscroll {
   .gallery-block {
     margin-top: -78rem;
   }
+}
+
+.events {
+  position: relative;
+  top: -15rem;
 }
 
 .events__title {
@@ -666,6 +715,21 @@ body.noscroll {
   background-position-x: center;
   padding-top: 6rem;
   z-index: 500;
+  margin-top: -12rem;
+}
+
+@media (max-width: 992px) {
+  .comment {
+    height: 135rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .comment {
+    height: 145rem;
+    padding-top: 0rem;
+    margin-top: -26rem;
+  }
 }
 
 .comment-slider {
@@ -705,6 +769,13 @@ body.noscroll {
   top: 7rem;
 }
 
+@media (max-width: 576px) {
+  .comment__rec {
+    right: -82%;
+    top: 10rem;
+  }
+}
+
 .comment__rec_second {
   position: relative;
   top: -22rem;
@@ -712,6 +783,26 @@ body.noscroll {
   max-width: 72.585rem;
   height: auto;
   width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .comment__rec_second {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .comment__rec_second {
+    width: 50rem;
+    left: -3%;
+    top: -13rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .comment__rec_second {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -791,7 +882,7 @@ body.noscroll {
 }
 
 .map {
-  margin-top: 25rem;
+  margin-top: 23rem;
   background-image: url("../images/map/map.png");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -817,6 +908,12 @@ body.noscroll {
   left: -10rem;
 }
 
+@media (max-width: 576px) {
+  .map__rec {
+    left: -24rem;
+  }
+}
+
 .map__arrow {
   margin: 0 auto;
   display: block;
@@ -828,8 +925,9 @@ body.noscroll {
 
 .ask {
   background-color: #F1F7FF;
-  padding: 15.284rem;
+  padding: 15.284rem 0;
   text-align: center;
+  max-height: 60rem;
 }
 
 .ask__title {
@@ -846,16 +944,38 @@ body.noscroll {
   z-index: 15;
 }
 
+.ask__rec {
+  height: auto;
+  width: 100%;
+  max-width: 33.543rem;
+  position: relative;
+  z-index: 5;
+  top: -29.5rem;
+  left: 46%;
+}
+
+@media (max-width: 576px) {
+  .ask__rec {
+    display: none;
+  }
+}
+
 .footer {
-  margin-top: -18.6rem;
+  margin-top: -23.5rem;
   font-family: 'IBM Plex Sans';
   background-color: #E0013F;
   color: #fff;
   font-size: 2rem;
   line-height: 2.8rem;
-  padding: 24rem 0 1rem;
+  padding: 30rem 0 1.5rem;
   position: relative;
   z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    margin-top: -18rem !important;
+  }
 }
 
 .footer__logo {
@@ -868,16 +988,6 @@ body.noscroll {
 .footer__privacy {
   text-align: center;
   display: block;
-}
-
-.footer__rec {
-  height: auto;
-  width: 100%;
-  max-width: 33.543rem;
-  position: relative;
-  top: -27rem;
-  left: 85%;
-  z-index: 5;
 }
 
 .footer-wrapper {
@@ -1211,10 +1321,10 @@ body.noscroll {
     <section class="comment" id="comment"><img class="comment__rec" src="../images/comment/comment-rec.png" alt="rectangle">
       <div class="container"> 
         <div class="row d-flex overflow-visible">
-          <div class="col-lg-5 offset-lg-1 col-md-6 col">
+          <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-6 col">
             <h2 class="comment__title">Отзывы</h2>
           </div>
-          <div class="col-md-6 col overflow-visible">
+          <div class="col-sm-6 col overflow-visible">
             <div class="comment-slider d-flex justify-content-start">
               <div class="comment-slider__item">
                 <div class="comment-slider__item_top d-flex justify-content-between"><img class="comment-slider__img" src="../images/comment/union.png" alt="union">
@@ -1258,9 +1368,9 @@ body.noscroll {
           <h5 class="ask__title">Остались вопросы?</h5>
           <h4 class="ask__text">Свяжитесь с нами</h4><a class="ask__btn btn">Оставить заявку</a>
         </div>
-      </div>
+      </div><img class="ask__rec" src="../images/footer/footer-rec.png" alt="rec">
     </section>
-    <footer class="footer" id="footer"><img class="footer__rec" src="../images/footer/footer-rec.png" alt="rec">
+    <footer class="footer" id="footer">
       <div class="container footer-wrapper">
         <div class="row d-flex justify-content-between">
           <div class="col-md-3 col-sm-4 col-12 d-sm-flex align-content-sm-between flex-sm-column justify-content-sm-between d-inline-block text-center"><span class="footer__date align-self-md-end align-self-sm-center">© 2022</span>
