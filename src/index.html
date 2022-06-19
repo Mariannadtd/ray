@@ -344,6 +344,18 @@ body.noscroll {
   padding-top: 10rem;
 }
 
+@media (max-width: 992px) {
+  .about {
+    padding-bottom: 21rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 36rem;
+  }
+}
+
 .about-list__img {
   width: 100%;
   z-index: 40;
@@ -427,13 +439,27 @@ body.noscroll {
 }
 
 .opportunities__rec_first {
-  max-width: 52.52rem !important;
+  max-width: 52.52rem;
   width: 100%;
   height: auto;
   position: relative;
   top: -21rem;
-  left: 125rem;
+  left: 68%;
   z-index: -14440;
+}
+
+@media (max-width: 992px) {
+  .opportunities__rec_first {
+    top: -31rem;
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .opportunities__rec_first {
+    top: -27rem;
+    max-width: 32rem;
+  }
 }
 
 .opportunities__rec_second {
@@ -587,6 +613,12 @@ body.noscroll {
   }
 }
 
+@media (max-width: 576px) {
+  .gallery {
+    padding-top: 41rem;
+  }
+}
+
 .gallery__img {
   max-height: 43rem;
   overflow: hidden;
@@ -603,7 +635,6 @@ body.noscroll {
 
 .gallery__rec {
   position: relative;
-  right: -157rem;
   right: -84%;
   top: -15rem;
   z-index: -10;
@@ -621,6 +652,12 @@ body.noscroll {
 @media (max-width: 992px) {
   .gallery__rec {
     top: -47rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery__rec {
+    top: -51rem;
   }
 }
 
@@ -978,6 +1015,10 @@ body.noscroll {
   }
 }
 
+.footer__rights {
+  padding: 3rem 0;
+}
+
 .footer__logo {
   display: block;
   padding: 6rem 0 8rem;
@@ -996,9 +1037,21 @@ body.noscroll {
   margin-bottom: -20rem;
 }
 
+@media (max-width: 576px) {
+  .footer-wrapper {
+    text-align: center !important;
+  }
+}
+
 .footer__socials {
   text-align: right;
   margin-bottom: -2.5rem;
+}
+
+@media (max-width: 576px) {
+  .footer__socials {
+    text-align: center !important;
+  }
 }
 
 .footer__socials::after {
@@ -1048,13 +1101,13 @@ body.noscroll {
     <header class="header" id="header">
       <div class="container"> 
         <div class="row">
-          <div class="col-4"><a class="header__btn upper" href="#">Бронь льда</a></div>
-          <div class="col-4">
+          <div class="col-5"><a class="header__btn upper" href="#">Бронь льда</a></div>
+          <div class="col-2">
             <div class="hamburger">
               <div class="hamburger__field" id="hamburger"> <span class="bar"> </span><span class="bar"></span></div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-5">
             <div class="header__number">8 495 602 02 32</div>
           </div>
         </div>
@@ -1099,78 +1152,78 @@ body.noscroll {
     </section>
     <section class="about" id="about"> 
       <div class="container">
-        <ul class="row col-lg-11 offset-lg-1 col-md-12 about-list px-0">
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+        <ul class="row col-lg-11 offset-lg-1 col-md-12 d-flex flex-md-row about-list px-0">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/ice.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">лед</h3>
                   <p class="description__paragraph">Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.</p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/ice-rink.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">зал</h3>
                   <p class="description__paragraph">Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/gum.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">тренажерный зал</h3>
                   <p class="description__paragraph">Комплекс оборудован тренажерным залом  с боксерскими грушами</p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/sound.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">звук</h3>
                   <p class="description__paragraph">Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/locker-room.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">раздевалки</h3>
                   <p class="description__paragraph">Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.</p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/spa.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">зона спа</h3>
                   <p class="description__paragraph">СПА, бассейн и баня удобно расположены внутри комплекса.</p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="col-md-6 about-list__item d-flex justify-content-start">
+          <li class="col-md-6 col-12 about-list__item d-flex justify-content-start">
             <div class="row">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex justify-content-md-between d-block">
                 <div class="col-5"><img class="about-list__img" src="../images/about/light.png"></div>
-                <div class="col-7 description">
+                <div class="col-md-7 col-12 description">
                   <h3 class="description__title">свет</h3>
                   <p class="description__paragraph">В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.</p>
                 </div>
@@ -1372,14 +1425,14 @@ body.noscroll {
     </section>
     <footer class="footer" id="footer">
       <div class="container footer-wrapper">
-        <div class="row d-flex justify-content-between">
-          <div class="col-md-3 col-sm-4 col-12 d-sm-flex align-content-sm-between flex-sm-column justify-content-sm-between d-inline-block text-center"><span class="footer__date align-self-md-end align-self-sm-center">© 2022</span>
-            <div class="footer__socials align-self-md-end align-self-sm-center"><span>Мы в соцсетях:</span>
-              <div class="footer__links align-self-md-end align-self-sm-center"><a>VK </a><a>OK</a><a>Telegram</a></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-12 d-flex flex-column justify-content-between"><span class="footer__date align-self-sm-end align-self-center">© 2022</span>
+            <div class="footer__socials align-self-sm-end align-self-center"><span>Мы в соцсетях:</span>
+              <div class="footer__links align-self-sm-end align-self-center"><a>VK </a><a>OK</a><a>Telegram</a></div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-4 col-12"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
-          <div class="col-md-3 col-sm-4 col-12 d-sm-flex align-content-sm-between flex-sm-column justify-content-sm-between d-inline-block text-center"><span class="footer__rights align-self-md-start align-self-sm-center text-sm-center">Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres align-self-md-start align-self-sm-center text-sm-center">Москва, <br>Волоколамское шоссе, д.88</span></div>
+          <div class="col-md-6 col-sm-4 col-12 order-sm-0 order-1"><img class="footer__logo" src="../images/header/logo.png" alt="logo"><a class="footer__privacy">Политика конфеденциальности</a></div>
+          <div class="col-md-3 col-sm-4 col-12 d-flex flex-column justify-content-between"><span class="footer__rights align-self-center">Ледовый комплекс «Луч». <br>Все права защищены.</span><span class="footer__addres align-self-center">Москва, <br>Волоколамское шоссе, д.88</span></div>
         </div>
       </div>
     </footer>

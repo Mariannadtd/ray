@@ -289,6 +289,12 @@ body {
 }
 .about {
   padding-top: 10rem;
+  @media (max-width: $large) {
+    padding-bottom: 21rem;
+  }
+  @media (max-width: $medium) {
+    padding-bottom: 36rem;
+  }
   &-list {
     &__img {
     width: 100%;
@@ -358,13 +364,21 @@ body {
   }
   &__rec {
     &_first { 
-      max-width: 52.52rem !important;
+      max-width: 52.52rem;
       width: 100%;
       height: auto;
       position: relative;
       top: -21rem;
-      left: 125rem;
+      left: 68%;
       z-index: -14440;
+      @media (max-width: $large) {
+        top: -31rem;
+        max-width: 35rem;
+      }
+      @media (max-width: $medium) {
+        top: -27rem;
+        max-width: 32rem;
+      }
     }
     &_second {
       left: -12rem;
@@ -489,6 +503,9 @@ body {
   @media (max-width: $large) {
     padding-top: 37rem;
   }
+  @media (max-width: $small) {
+    padding-top: 41rem;
+  }
   &__img {
     max-height: 43rem;
     overflow: hidden;
@@ -502,7 +519,6 @@ body {
   }
   &__rec {
     position: relative;
-    right: -157rem;
     right: -84%;
     top: -15rem;
     z-index: -10;
@@ -514,6 +530,9 @@ body {
     }
     @media (max-width: $large) {
       top: -47rem;
+    }
+    @media (max-width: $small) {
+      top: -51rem;
     }
   }
   &-block {
@@ -813,6 +832,9 @@ body {
   @media (max-width: $small) {
     margin-top: -18rem !important;
   }
+  &__rights {
+    padding: 3rem 0;
+  }
   &__logo {
     display: block;
     padding: 6rem 0 8rem;
@@ -827,10 +849,16 @@ body {
     top: -23rem;
     position: relative;
     margin-bottom: -20rem;
+    @media (max-width: $small) {
+      text-align: center !important;
+    }
   }
   &__socials {
     text-align: right;
     margin-bottom: -2.5rem;
+    @media (max-width: $small) {
+      text-align: center !important;
+    }
     &::after {
       width: 0.2rem;
       height: 2rem;
