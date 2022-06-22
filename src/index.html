@@ -1081,6 +1081,23 @@ body.noscroll {
 .footer__links a:nth-child(2) {
   margin: 0 2rem;
 }
+
+.form {
+  font-family: 'IBM Plex Sans';
+}
+
+.form__title {
+  font-size: 4.8rem;
+}
+
+.form__text {
+  font-size: 1.2rem;
+}
+
+.form__input {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
 /*# sourceMappingURL=style.css.map *//*!
  * Bootstrap Grid v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -1436,6 +1453,31 @@ body.noscroll {
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="row"> 
+        <div class="col">
+          <div class="popup-book"> 
+            <div class="popup-book__content text-center"> 
+              <button class="popup-close">&times;</button>
+              <div class="popup-form"> 
+                <form class="from" action="#">
+                  <h2 class="form__title">Бронирование льда
+                    <div class="d-flex justify-content-between">
+                      <input class="form__input" name="user_name" required type="text" placeholder="Имя">
+                      <input class="form__input" name="user_phone" required type="text" placeholder="Телефон">
+                    </div>
+                    <input class="form__input" name="date_time" required type="text" placeholder="Дата и время">
+                    <input class="form__input" name="user_comment" required type="text" placeholder="Комментарий">
+                    <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</p>
+                    <input class="form__btn btn upper" type="submit" name="submit" value="Отправить">
+                  </h2>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="modules"></script>
   </body>
 </html>

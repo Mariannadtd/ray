@@ -1,0 +1,16 @@
+.container
+  .row 
+    .col
+      .popup-book 
+        .popup-book__content.text-center 
+          button.popup-close &times;
+          .popup-form 
+            form.from(action="#")
+              h2.form__title Бронирование льда
+                .d-flex.justify-content-between
+                  input(name="user_name" required type="text" placeholder="Имя").form__input
+                  input(name="user_phone" required type="text" placeholder="Телефон").form__input
+                input(name="date_time" required type="text" placeholder="Дата и время").form__input
+                input(name="user_comment" required type="text" placeholder="Комментарий").form__input
+                p.form__text Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.
+                input(type="submit", name="submit", value="Отправить").form__btn.btn.upper

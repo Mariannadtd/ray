@@ -9,7 +9,7 @@ html
       include styles/bootstrap-grid.min.css
       include styles/bootstrap-reboot.min.css
   body
-    include modules/header
+    include pug-modules/header
 
     section#offer.offer 
       .container
@@ -251,6 +251,8 @@ html
           a.ask__btn.btn Оставить заявку
       img(src="../images/footer/footer-rec.png", alt="rec").ask__rec
 
-    include modules/footer
+    include pug-modules/footer
 
-    script(src='script.js')
+    include pug-modules/modals
+
+    script(src='js/main.js', type='modules')
