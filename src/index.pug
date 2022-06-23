@@ -248,11 +248,13 @@ html
         .ask-wrap.upper
           h5.ask__title Остались вопросы?
           h4.ask__text Свяжитесь с нами
-          a.ask__btn.btn Оставить заявку
+          a.ask__btn.btn.popup-connect__btn Оставить заявку
       img(src="../images/footer/footer-rec.png", alt="rec").ask__rec
 
     include pug-modules/footer
 
     include pug-modules/modals
+
+    include pug-modules/hamburger
 
     script(src='js/main.js', type='modules')

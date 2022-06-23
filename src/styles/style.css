@@ -1077,20 +1077,69 @@ body.noscroll {
   margin: 0 2rem;
 }
 
-.form {
-  font-family: 'IBM Plex Sans';
+.popup-book, .popup-connect {
+  max-width: 52rem !important;
+  width: 100%;
+  height: auto;
+  padding: 3.9rem !important;
+  color: #333333;
+}
+
+.popup-close {
+  border: none;
+  background-color: white;
+  position: relative;
+  top: -1rem;
+  left: 42rem;
+}
+
+.popup-close__first {
+  width: 4rem;
+  height: 0.1rem;
+  -webkit-transform: translateY(0.05rem) rotate(45deg);
+          transform: translateY(0.05rem) rotate(45deg);
+  display: block;
+  background-color: #333333;
+}
+
+.popup-close__second {
+  width: 4rem;
+  height: 0.1rem;
+  -webkit-transform: translateY(-0.05rem) rotate(-45deg);
+          transform: translateY(-0.05rem) rotate(-45deg);
+  display: block;
+  background-color: #333333;
 }
 
 .form__title {
-  font-size: 4.8rem;
+  font-size: 4.8rem !important;
+  letter-spacing: .3rem;
+  color: #000;
+  padding: 2rem 0 3rem;
 }
 
 .form__text {
   font-size: 1.2rem;
+  margin-bottom: 2.6rem;
 }
 
 .form__input {
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: 2rem !important;
+  line-height: 2.8rem !important;
+  font-family: 'IBM Plex Sans';
+  border: none;
+  border-bottom: 1px solid #333333 !important;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
+  width: 100%;
+}
+
+.form__btn {
+  max-width: 18rem !important;
+  border: none;
+}
+
+.hamburger-popup {
+  background-color: #0069E4;
 }
 /*# sourceMappingURL=style.css.map */
